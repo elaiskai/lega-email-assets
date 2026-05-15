@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEGA popup'as - −10% pirmajam apsipirkimui</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Outfit', Helvetica, Arial, sans-serif;
+    background: #f5f3ec url("https://cdn.jsdelivr.net/gh/elaiskai/lega-email-assets@main/assets/popup-bg-context.jpg") no-repeat center/cover;
+    background-color: #d8d3c4;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .backdrop {
+    background: rgba(31, 27, 20, 0.35);
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(2px);
+  }
+
+  .popup {
+    position: relative;
+    background: #EBEADF;
+    width: 100%;
+    max-width: 880px;
+    box-shadow: 0 30px 80px rgba(31, 27, 20, 0.25);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    z-index: 10;
+  }
+
+  .popup .image {
+    background-image: url("https://cdn.jsdelivr.net/gh/elaiskai/lega-email-assets@main/heroes/c3-lino-kolekcija-hero-blue.jpg");
+    background-size: cover;
+    background-position: center top;
+    min-height: 540px;
+  }
+
+  .popup .form {
+    padding: 56px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .close-x {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    background: transparent;
+    border: 0;
+    color: #8E7B5C;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 1;
+  }
+
+  .eyebrow {
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: #8E7B5C;
+    margin: 0 0 24px 0;
+    line-height: 1;
+  }
+
+  .headline {
+    font-family: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+    font-size: 38px;
+    line-height: 1.15;
+    font-weight: 400;
+    color: #1F1B14;
+    margin: 0 0 18px 0;
+  }
+
+  .headline em {
+    font-style: italic;
+  }
+
+  .subhead {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: #3A352C;
+    margin: 0 0 32px 0;
+  }
+
+  .field {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #D2CFC0;
+    padding: 16px 18px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    color: #1F1B14;
+    margin-bottom: 14px;
+    outline: none;
+    transition: border 0.15s;
+  }
+
+  .field::placeholder {
+    color: #8E7B5C;
+  }
+
+  .field:focus {
+    border-color: #1F1B14;
+  }
+
+  .btn {
+    width: 100%;
+    background: #1F1B14;
+    color: #FFFFFF;
+    border: 0;
+    padding: 18px 24px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+
+  .btn:hover {
+    background: #3A352C;
+  }
+
+  .trust {
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    color: #8E7B5C;
+    margin: 16px 0 0 0;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .decline {
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    font-style: italic;
+    color: #8E7B5C;
+    text-align: center;
+    margin: 20px 0 0 0;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+  }
+
+  .decline:hover {
+    text-decoration: underline;
+  }
+
+  /* Stage 2 - thank you (preview only, hidden) */
+  .stage2 {
+    display: none;
+    padding: 56px 48px;
+    text-align: center;
+  }
+
+  .stage2.show {
+    display: block;
+  }
+
+  .stage2 h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    color: #1F1B14;
+    margin: 0 0 20px 0;
+  }
+
+  .stage2 p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    color: #3A352C;
+    line-height: 1.55;
+    margin: 0 0 32px 0;
+  }
+
+  /* Mobile */
+  @media (max-width: 720px) {
+    .popup {
+      grid-template-columns: 1fr;
+      max-width: 420px;
+    }
+    .popup .image {
+      min-height: 260px;
+      background-position: center 20%;
+    }
+    .popup .form {
+      padding: 36px 28px;
+    }
+    .headline {
+      font-size: 28px;
+    }
+    .subhead {
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+  }
+
+  /* Toggle stage demo */
+  .demo-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(31, 27, 20, 0.85);
+    color: white;
+    padding: 10px 16px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    z-index: 100;
+  }
+</style>
+</head>
+<body>
+
+<div class="backdrop"></div>
+
+<div class="popup" id="popup">
+  <div class="image" id="popup-image"></div>
+
+  <div class="form" id="popup-form">
+    <button class="close-x" onclick="alert('close click')">×</button>
+
+    <p class="eyebrow">LAIMĖS JAUSMAS &middot; LEGA</p>
+
+    <h1 class="headline"><em>−10%</em> Jūsų pirmajam apsipirkimui</h1>
+
+    <p class="subhead">Prenumeruokite naujienlaiškį ir gaukite nuolaidos kodą tiesiai į paštą. Pirmos pamatysite naujas kolekcijas, ramių rytų stiliaus pasiūlymus ir lino siluetus.</p>
+
+    <input type="email" class="field" placeholder="Jūsų el. pašto adresas">
+
+    <button class="btn">GAUTI −10% NUOLAIDĄ</button>
+
+    <p class="trust">Be spam'o. Atsisakymas vienu paspaudimu.</p>
+
+    <a href="#" class="decline">ne dabar, ačiū</a>
+  </div>
+
+  <div class="stage2" id="stage2">
+    <h2>Ačiū, kad prisijungėte.</h2>
+    <p>Nuolaidos kodas ką tik išsiųstas į Jūsų paštą. Patikrinkite gautų laiškų aplanką (ir spam, jei nematote per 2 minutes).</p>
+    <button class="btn" onclick="document.getElementById('popup-form').style.display='flex';document.getElementById('popup-image').style.display='block';document.getElementById('stage2').classList.remove('show')">PIRKTI LEGA</button>
+  </div>
+</div>
+
+<button class="demo-toggle" onclick="
+  const s2 = document.getElementById('stage2');
+  const form = document.getElementById('popup-form');
+  const img = document.getElementById('popup-image');
+  if (s2.classList.contains('show')) {
+    s2.classList.remove('show');
+    form.style.display = 'flex';
+    img.style.display = 'block';
+  } else {
+    s2.classList.add('show');
+    form.style.display = 'none';
+    img.style.display = 'none';
+  }
+">Toggle: Step 1 ↔ Step 2 (thank-you)</button>
+
+</body>
+</html>
