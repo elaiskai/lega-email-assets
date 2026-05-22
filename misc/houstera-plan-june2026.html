@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Houstera — Birželis 2026 Kampanijų Planas</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', Arial, sans-serif; background: #F7F7F7; color: #333; }
+  .header { background: #1F1F1F; color: #fff; padding: 36px 40px; }
+  .header h1 { font-family: 'Poppins', Arial, sans-serif; font-size: 28px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+  .header h1 span { color: #E0B252; }
+  .header p { margin-top: 8px; color: #aaa; font-size: 14px; }
+  .ab-box { background: #fff; border-left: 4px solid #E0B252; margin: 24px 40px; padding: 20px 24px; border-radius: 4px; }
+  .ab-box h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #E0B252; margin-bottom: 12px; }
+  .ab-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .ab-table th { background: #F7F7F7; text-align: left; padding: 8px 12px; font-weight: 700; color: #1F1F1F; }
+  .ab-table td { padding: 8px 12px; border-top: 1px solid #eee; }
+  .ab-table .a { color: #777; }
+  .ab-table .b { color: #459647; font-weight: 600; }
+  .section { margin: 0 40px 32px; }
+  .section h2 { font-family: 'Poppins', Arial, sans-serif; font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #777; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid #ddd; }
+  .campaign-card { background: #fff; border-radius: 6px; margin-bottom: 16px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .campaign-header { display: flex; align-items: stretch; }
+  .campaign-num { background: #1F1F1F; color: #E0B252; font-family: 'Poppins', Arial, sans-serif; font-size: 20px; font-weight: 700; width: 64px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .campaign-title { padding: 16px 20px; flex: 1; }
+  .campaign-title .date { font-size: 12px; color: #E0B252; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+  .campaign-title h3 { font-family: 'Poppins', Arial, sans-serif; font-size: 17px; font-weight: 700; color: #1F1F1F; margin-bottom: 2px; }
+  .campaign-title .theme { font-size: 13px; color: #777; }
+  .campaign-body { padding: 0 20px 20px 20px; }
+  .campaign-body .copy-line { font-size: 14px; color: #333; font-style: italic; background: #F7F7F7; padding: 10px 14px; border-radius: 4px; border-left: 3px solid #E0B252; margin-bottom: 12px; }
+  .products-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #999; margin-bottom: 6px; font-weight: 700; }
+  .product-tag { display: inline-block; background: #1F1F1F; color: #fff; font-size: 12px; padding: 3px 10px; border-radius: 3px; margin: 2px 4px 2px 0; }
+  .format-note { font-size: 12px; color: #459647; margin-top: 10px; }
+  .format-note strong { color: #459647; }
+  .tag-thermacell { background: #2d6a4f; }
+  .tag-ado { background: #1a3a5c; }
+  .tag-engwe { background: #3d1a5c; }
+  .tag-kitchen { background: #5c3a1a; }
+  .tag-home { background: #5c1a1a; }
+  .tag-tech { background: #1a1a5c; }
+  .open-items { background: #fff; border-radius: 6px; padding: 20px 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .open-items h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: #777; margin-bottom: 14px; }
+  .open-item { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; font-size: 14px; }
+  .open-item .dot { width: 18px; height: 18px; border: 2px solid #E0B252; border-radius: 50%; flex-shrink: 0; margin-top: 1px; }
+  .footer { background: #1F1F1F; color: #777; text-align: center; padding: 20px; font-size: 12px; margin-top: 16px; }
+  @media (max-width: 600px) {
+    .header, .ab-box, .section { padding-left: 16px; padding-right: 16px; margin-left: 0; margin-right: 0; }
+    .campaign-num { width: 48px; font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>HOUS<span>TERA</span> — Birželis 2026</h1>
+  <p>Kampanijų planas · 8 kampanijos · Bir 3 – Bir 26 · A/B testas: mažiau nuotraukų</p>
+</div>
+
+<div class="ab-box">
+  <h2>A/B Testo logika</h2>
+  <table class="ab-table">
+    <tr>
+      <th></th>
+      <th>Variantas A — Gegužė</th>
+      <th>Variantas B — Birželis</th>
+    </tr>
+    <tr>
+      <td>Hero</td>
+      <td class="a">Produktų nuotraukos</td>
+      <td class="b">Tekstinis banner'is (spalvinis fonas)</td>
+    </tr>
+    <tr>
+      <td>Kūnas</td>
+      <td class="a">Produktų tinklelis su nuotraukomis</td>
+      <td class="b">Bullet'ai + aprašymai + nuorodos</td>
+    </tr>
+    <tr>
+      <td>Nuotraukos</td>
+      <td class="a">3–6 produktų foto</td>
+      <td class="b">Max 1 arba visai be foto</td>
+    </tr>
+    <tr>
+      <td>Tikslas</td>
+      <td class="a">Vizualinis pritraukimas</td>
+      <td class="b">Deliverability — mažiau "Reklamos" aplanko</td>
+    </tr>
+  </table>
+  <p style="font-size:13px;color:#777;margin-top:12px;">Galo mėnesio vertinimas: atidarymai, klikuojamumas, pajamos — nusprendžiame kaip toliau.</p>
+</div>
+
+<div class="section">
+  <h2>Kampanijų tvarkaraštis</h2>
+
+  <!-- C1 -->
+  <div class="campaign-card">
+    <div class="campaign-header">
+      <div class="campaign-num">C1</div>
+      <div class="campaign-title">
+        <div class="date">Birželis 3 (Antradienis)</div>
+        <h3>Thermacell — sezono pikas</h3>
+        <div class="theme">Lauko sezonas prasideda — uodai jau čia</div>
+      </div>
+    </div>
+    <div class="campaign-body">
+      <div class="copy-line">„Šis birželis — uodų sezono viršūnė. Pora dienų gamtoje be repelentas = greitai prisiminsi kodėl."</div>
+      <div class="products-label">Produktai</div>
+      <span class="product-tag tag-thermacell">Thermacell THEL55I (LED)</span>
+      <span class="product-tag tag-thermacell">Thermacell E55 XI</span>
+      <div class="format-note"><strong>B formatas:</strong> žalias hero + „THERMACELL" tekstas · bullet'ai: veikimo zona, laikas, atsparumas vėjui</div>
+    </div>
+  </div>
+
+  <!-- C2 -->
+  <div class="campaign-card">
+    <div class="campaign-header">
+      <div class="campaign-num">C2</div>
+      <div class="campaign-title">
+        <div class="date">Birželis 6 (Penktadienis)</div>
+        <h3>ADO dviračiai + Nauja parduotuvė Alytuje</h3>
+        <div class="theme">Elektrinis judėjimas — nauja parduotuvė Alytuje</div>
+      </div>
+    </div>
+    <div class="campaign-body">
+      <div class="copy-line">„Nauja parduotuvė Alytuje — ir joje elektrinis judėjimas. ADO dviračiai jau čia."</div>
+      <div class="products-label">Produktai</div>
+      <span class="product-tag tag-ado">ADO Air 20 ECO (350W)</span>
+      <span class="product-tag tag-ado">ADO Air 20 Pro (250W)</span>
+      <div class="format-note"><strong>B formatas:</strong> tamsus hero + „ADO · NAUJA ALYTUJE" · specifikacijos tekstu (ridas, galia, baterija)</div>
+    </div>
+  </div>
+
+  <!-- C3 -->
+  <div class="campaign-card">
+    <div class="campaign-header">
+      <div class="campaign-num">C3</div>
+      <div class="campaign-title">
+        <div class="date">Birželis 10 (Antradienis)</div>
+        <h3>ENGWE elektriniai dviračiai</h3>
+        <div class="theme">Galingesnis pasirinkimas — ENGWE birželiui</div>
+      </div>
+    </div>
+    <div class="campaign-body">
+      <div class="copy-line">„ADO pradžiai, ENGWE — kai nori daugiau. Ilgesnis ridas, stipresnis variklis."</div>
+      <div class="products-label">Produktai</div>
+      <span class="product-tag tag-engwe">ENGWE E26 (16Ah)</span>
+      <span class="product-tag tag-engwe">ENGWE ENGINE PRO 3.0 (48V 15Ah)</span>
+      <div class="format-note"><strong>B formatas:</strong> specifikacijų palyginimas tekste · ridas / galia / baterija lentelė</div>
+    </div>
+  </div>
+
+  <!-- C4 -->
+  <div class="campaign-card">
+    <div class="campaign-header">
+      <div class="campaign-num">C4</div>
+      <div class="campaign-title">
+        <div class="date">Birželis 12 (Ketvirtadienis)</div>
+        <h3>Karšto oro gruzdintuvės</h3>
+        <div class="theme">Vasaros virtuvė — mažiau aliejaus, daugiau skonio</div>
+      </div>
+    </div>
+    <div class="campaign-body">
+      <div class="copy-line">„Vasarą mažiau aliejaus, ne mažiau skonio. Karšto oro gruzdintuvė — greitam ir sveikam."</div>
+      <div class="products-label">Produktai</div>
+      <span class="product-tag tag-kitchen">Zyle ZY101DAF (11l, dviguba)</span>
+      <span class="product-tag tag-kitchen">Michelino 20216</span>
+      <span class="product-tag tag-kitchen">Jocca 2417 (8l)</span>
+      <div class="format-note"><strong>B formatas:</strong> bullet'ai — greitesnė nei orkaitė / mažiau aliejaus / lengva valyti / tinka visai šeimai</div>
+    </div>
+  </div>
+
+  <!-- C5 -->
+  <div class="campaign-card">
+    <div class="campaign-header">
+      <div class="campaign-num">C5</div>
+      <div class="campaign-title">
+        <div class="date">Birželis 17 (Antradienis)</div>
+        <h3>Dulkių siurbliai — Heinner garantija</h3>
+        <div class="theme">Namų tvarkymo sezonas — 3 metų garantija</div>
+      </div>
+    </div>
+    <div class="campaign-body">
+      <div class="copy-line">„Vasarą daugiau namuose — ir daugiau tvarkos reikia. Heinner akumuliatoriniai su 3m garantija."</div>
+      <div class="products-label">Produktai</div>
+      <span class="product-tag tag-home">Heinner HSVC-MB22.2BL (22.2V)</span>
+      <span class="product-tag tag-home">Heinner HSVC-MBD25.9S (25.9V)</span>
+      <span class="product-tag tag-home">ETA Avanto (AAAA klasė)</span>
+      <div class="format-note"><strong>B formatas:</strong> Heinner 3m garantija kaip pagrindinis USP · be kabelio / ilgas darbas · palyginimas su standartiniais</div>
+    </div>
+  </div>
+
+  <!-- C6 -->
+  <div class="campaign-card">
+    <div class="campaign-header">
+      <div class="campaign-num">C6</div>
+      <div class="campaign-title">
+        <div class="date">Birželis 19 (Ketvirtadienis)</div>
+        <h3>Thermacell — Joninių tema</h3>
+        <div class="theme">Joninės artėja — laužai, iškyla, uodai</div>
+      </div>
+    </div>
+    <div class="campaign-body">
+      <div class="copy-line">„Joninės — laužai, iškyla, uodai. Thermacell jau šimtams žmonių — dabar ir Jums."</div>
+      <div class="products-label">Produktai</div>
+      <span class="product-tag tag-thermacell">Thermacell E55</span>
+      <span class="product-tag tag-thermacell">Thermacell THEL55I</span>
+      <span class="product-tag tag-thermacell">Užpildai / priedai</span>
+      <div class="format-note"><strong>B formatas:</strong> social proof angle — „kasmet birželį parduodame šimtus" · Joninių kontekstas</div>
+    </div>
+  </div>
+
+  <!-- C7 -->
+  <div class="campaign-card">
+    <div class="campaign-header">
+      <div class="campaign-num">C7</div>
+      <div class="campaign-title">
+        <div class="date">Birželis 24 (Antradienis)</div>
+        <h3>Laptopai — birželio pabaigos dealai</h3>
+        <div class="theme">Geri dealai prieš vasarą — studentams ir biurui</div>
+      </div>
+    </div>
+    <div class="campaign-body">
+      <div class="copy-line">„Birželio pabaiga — gerų dealų metas. Dell ir kiti laptopai prieš vasarą."</div>
+      <div class="products-label">Produktai</div>
+      <span class="product-tag tag-tech">Dell DC16251 (Core 5, 16GB)</span>
+      <span class="product-tag tag-tech">+ kiti pagal aktyvias kainas</span>
+      <div class="format-note"><strong>Pastaba:</strong> Patikrinti su Gyčiu kokie konkretūs dealai bus biržlelio pabaigoje prieš buildą</div>
+    </div>
+  </div>
+
+  <!-- C8 -->
+  <div class="campaign-card">
+    <div class="campaign-header">
+      <div class="campaign-num">C8</div>
+      <div class="campaign-title">
+        <div class="date">Birželis 26 (Ketvirtadienis)</div>
+        <h3>ADO + ENGWE vasaros combo</h3>
+        <div class="theme">Elektrinis dviratis bet kuriam poreikiui</div>
+      </div>
+    </div>
+    <div class="campaign-body">
+      <div class="copy-line">„ADO ar ENGWE? Abu skirti judėjimui. Pasirink savo vasaros tempą."</div>
+      <div class="products-label">Produktai</div>
+      <span class="product-tag tag-ado">ADO Air 20S</span>
+      <span class="product-tag tag-engwe">ENGWE ENGINE X (750W)</span>
+      <div class="format-note"><strong>B formatas:</strong> šalia-šalia palyginimas tekste — ADO (lengvas, kasdieniai) vs ENGWE (galingas, reljefas)</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="section">
+  <div class="open-items">
+    <h3>Atviri klausimai</h3>
+    <div class="open-item"><div class="dot"></div><div>Alytaus parduotuvės atidarymo data — C2 turiniui patikslinti</div></div>
+    <div class="open-item"><div class="dot"></div><div>Ar yra nuolaidų kodai kuriai nors kampanijai?</div></div>
+    <div class="open-item"><div class="dot"></div><div>Laptopų dealai — kokie konkretūs modeliai/kainos birželio pabaigoje (C7)?</div></div>
+    <div class="open-item"><div class="dot"></div><div>Siuntimo segmentas: visi prenumeratoriai ar aktyvūs 60d?</div></div>
+    <div class="open-item"><div class="dot"></div><div>Siuntimo laikas: 10:00 LT (kaip gegužę)?</div></div>
+  </div>
+</div>
+
+<div class="footer">
+  eLaiškai · Houstera Birželis 2026 · Paruošta 2026-05-22
+</div>
+
+</body>
+</html>
