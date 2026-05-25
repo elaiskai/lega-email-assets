@@ -6,36 +6,29 @@
 <title>Vidurnakčio kolekcija – LEGA</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   .email-wrapper { width: 100% !important; }
 
-  /* Margin + gutter columns vanish */
-  .col-margin,
-  .col-gutter {
-    display: none !important;
-    width: 0 !important;
-    max-width: 0 !important;
-    padding: 0 !important;
-    overflow: hidden !important;
-    mso-hide: all;
-  }
-
-  /* Product columns stack full-width */
   .product-col {
     display: block !important;
     width: 100% !important;
     max-width: 100% !important;
-    padding: 0 20px 32px 20px !important;
+    padding: 0 0 32px 0 !important;
+    text-align: center !important;
     box-sizing: border-box !important;
   }
 
-  /* Image crop wrapper releases on mobile — full height shows */
   .img-crop {
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  .img-crop td {
+    width: 100% !important;
     height: auto !important;
     overflow: visible !important;
   }
 
-  /* Image fills full card width on mobile */
   .product-img {
     width: 100% !important;
     height: auto !important;
@@ -57,7 +50,7 @@
   <tr>
     <td style="background-color:#EBEADF;padding:32px 32px 24px 32px;">
       <a href="https://lega.lt" style="display:inline-block;line-height:0;">
-        <img src="https://cdn.jsdelivr.net/gh/elaiskai/lega-email-assets@main/brand/logo.png"
+        <img src="data:image/png;base64,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"
           alt="LEGA" width="148"
           style="display:block;width:148px;height:auto;border:0;">
       </a>
@@ -122,29 +115,27 @@
 
   <!-- ─────────────────── PRODUCT ROW 1 ─────────────────── -->
   <tr>
-    <td style="background-color:#EBEADF;padding:0;">
-      <table width="600" cellpadding="0" cellspacing="0" border="0">
+    <td style="background-color:#EBEADF;padding:0 24px;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="col-margin" width="28" style="padding:0;font-size:0;line-height:0;">&nbsp;</td>
 
           <!-- PRODUCT 1: FIORA -->
-          <td class="product-col" width="260" valign="top" style="padding:0 0 36px 0;vertical-align:top;">
-            <!-- image crop wrapper -->
-            <table class="img-crop" width="260" cellpadding="0" cellspacing="0" border="0"
-              style="width:260px;overflow:hidden;">
+          <td class="product-col" valign="top" width="50%"
+            style="width:50%;padding:0 12px 36px 0;vertical-align:top;">
+            <table class="img-crop" width="100%" cellpadding="0" cellspacing="0" border="0"
+              style="width:100%;overflow:hidden;">
               <tr>
-                <td class="img-crop" width="260" height="290"
-                  style="width:260px;height:290px;overflow:hidden;line-height:0;vertical-align:top;padding:0;">
+                <td class="img-crop" width="100%" height="290"
+                  style="height:290px;overflow:hidden;line-height:0;vertical-align:top;padding:0;">
                   <a href="https://lega.lt/products/nmv103c" style="display:block;line-height:0;">
                     <img class="product-img"
                       src="https://cdn.shopify.com/s/files/1/0955/8897/4937/files/naktinukai-su-neriniu-fiorella-t-melyna.jpg?v=1754463442"
-                      alt="FIORA" width="260"
-                      style="display:block;width:260px;height:auto;min-height:290px;object-fit:cover;object-position:top center;">
+                      alt="FIORA" width="100%"
+                      style="display:block;width:100%;height:auto;min-height:290px;object-fit:cover;object-position:top center;">
                   </a>
                 </td>
               </tr>
             </table>
-            <!-- card text -->
             <p style="margin:14px 0 3px;font-family:'Outfit',Helvetica,Arial,sans-serif;
               font-size:10px;letter-spacing:0.28em;color:#8E7B5C;text-transform:uppercase;">
               Vidurnakčio kolekcija
@@ -178,20 +169,19 @@
             </a>
           </td>
 
-          <td class="col-gutter" width="24" style="padding:0;font-size:0;line-height:0;">&nbsp;</td>
-
           <!-- PRODUCT 2: FLORISSE -->
-          <td class="product-col" width="260" valign="top" style="padding:0 0 36px 0;vertical-align:top;">
-            <table class="img-crop" width="260" cellpadding="0" cellspacing="0" border="0"
-              style="width:260px;overflow:hidden;">
+          <td class="product-col" valign="top" width="50%"
+            style="width:50%;padding:0 0 36px 12px;vertical-align:top;">
+            <table class="img-crop" width="100%" cellpadding="0" cellspacing="0" border="0"
+              style="width:100%;overflow:hidden;">
               <tr>
-                <td class="img-crop" width="260" height="290"
-                  style="width:260px;height:290px;overflow:hidden;line-height:0;vertical-align:top;padding:0;">
+                <td class="img-crop" width="100%" height="290"
+                  style="height:290px;overflow:hidden;line-height:0;vertical-align:top;padding:0;">
                   <a href="https://lega.lt/products/nmv97c" style="display:block;line-height:0;">
                     <img class="product-img"
                       src="https://cdn.shopify.com/s/files/1/0955/8897/4937/files/trumpi-viskoziniai-naktinukai-florisse-lietaus-debesies.jpg?v=1754464254"
-                      alt="FLORISSE" width="260"
-                      style="display:block;width:260px;height:auto;min-height:290px;object-fit:cover;object-position:top center;">
+                      alt="FLORISSE" width="100%"
+                      style="display:block;width:100%;height:auto;min-height:290px;object-fit:cover;object-position:top center;">
                   </a>
                 </td>
               </tr>
@@ -214,7 +204,7 @@
             </p>
             <p style="margin:0 0 11px;font-family:'Outfit',Helvetica,Arial,sans-serif;
               font-size:13px;line-height:1.6;color:#444;font-weight:300;">
-              Tarsi pirmieji saulės spinduliai, šie naktiniai švelniai glosto, suteikdami lengvumo ir elegancijos pojūčius.
+              Tarsi pirmieji saulės spinduliai, šie naktiniai švelniai glosto, suteikdami lengvumo ir elegancijos pojūčių.
             </p>
             <p style="margin:0 0 14px;font-family:'Cormorant Garamond',Georgia,serif;
               font-size:18px;font-weight:600;color:#1A1A1A;">
@@ -229,7 +219,6 @@
             </a>
           </td>
 
-          <td class="col-margin" width="28" style="padding:0;font-size:0;line-height:0;">&nbsp;</td>
         </tr>
       </table>
     </td>
@@ -244,23 +233,23 @@
 
   <!-- ─────────────────── PRODUCT ROW 2 ─────────────────── -->
   <tr>
-    <td style="background-color:#EBEADF;padding:0;">
-      <table width="600" cellpadding="0" cellspacing="0" border="0">
+    <td style="background-color:#EBEADF;padding:0 24px;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td class="col-margin" width="28" style="padding:0;font-size:0;line-height:0;">&nbsp;</td>
 
           <!-- PRODUCT 3: PERLA -->
-          <td class="product-col" width="260" valign="top" style="padding:0 0 36px 0;vertical-align:top;">
-            <table class="img-crop" width="260" cellpadding="0" cellspacing="0" border="0"
-              style="width:260px;overflow:hidden;">
+          <td class="product-col" valign="top" width="50%"
+            style="width:50%;padding:0 12px 36px 0;vertical-align:top;">
+            <table class="img-crop" width="100%" cellpadding="0" cellspacing="0" border="0"
+              style="width:100%;overflow:hidden;">
               <tr>
-                <td class="img-crop" width="260" height="290"
-                  style="width:260px;height:290px;overflow:hidden;line-height:0;vertical-align:top;padding:0;">
+                <td class="img-crop" width="100%" height="290"
+                  style="height:290px;overflow:hidden;line-height:0;vertical-align:top;padding:0;">
                   <a href="https://lega.lt/products/nmv61" style="display:block;line-height:0;">
                     <img class="product-img"
                       src="https://cdn.shopify.com/s/files/1/0955/8897/4937/files/viskoziniai-naktiniai-perla-juodi.jpg?v=1754466834"
-                      alt="PERLA" width="260"
-                      style="display:block;width:260px;height:auto;min-height:290px;object-fit:cover;object-position:top center;">
+                      alt="PERLA" width="100%"
+                      style="display:block;width:100%;height:auto;min-height:290px;object-fit:cover;object-position:top center;">
                   </a>
                 </td>
               </tr>
@@ -298,21 +287,20 @@
             </a>
           </td>
 
-          <td class="col-gutter" width="24" style="padding:0;font-size:0;line-height:0;">&nbsp;</td>
-
           <!-- PRODUCT 4: MYSTIQUE -->
-          <td class="product-col" width="260" valign="top" style="padding:0 0 36px 0;vertical-align:top;">
-            <table class="img-crop" width="260" cellpadding="0" cellspacing="0" border="0"
-              style="width:260px;overflow:hidden;">
+          <td class="product-col" valign="top" width="50%"
+            style="width:50%;padding:0 0 36px 12px;vertical-align:top;">
+            <table class="img-crop" width="100%" cellpadding="0" cellspacing="0" border="0"
+              style="width:100%;overflow:hidden;">
               <tr>
-                <td class="img-crop" width="260" height="290"
-                  style="width:260px;height:290px;overflow:hidden;line-height:0;vertical-align:top;padding:0;">
+                <td class="img-crop" width="100%" height="290"
+                  style="height:290px;overflow:hidden;line-height:0;vertical-align:top;padding:0;">
                   <a href="https://lega.lt/products/laisvi-naktinukai-su-neriniais-mystique-tamsiai-melyna"
                     style="display:block;line-height:0;">
                     <img class="product-img"
                       src="https://cdn.shopify.com/s/files/1/0955/8897/4937/files/NMV79prmelyna.jpg?v=1770657391"
-                      alt="MYSTIQUE" width="260"
-                      style="display:block;width:260px;height:auto;min-height:290px;object-fit:cover;object-position:top center;">
+                      alt="MYSTIQUE" width="100%"
+                      style="display:block;width:100%;height:auto;min-height:290px;object-fit:cover;object-position:top center;">
                   </a>
                 </td>
               </tr>
@@ -350,7 +338,6 @@
             </a>
           </td>
 
-          <td class="col-margin" width="28" style="padding:0;font-size:0;line-height:0;">&nbsp;</td>
         </tr>
       </table>
     </td>
