@@ -6,55 +6,75 @@
 <title>Vidurnakčio kolekcija – LEGA</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-  @media only screen and (max-width: 480px) {
-    .email-wrapper { width: 100% !important; }
-    .hero-img { height: auto !important; }
-    .col-margin { display: none !important; width: 0 !important; padding: 0 !important; }
-    .col-gutter { display: none !important; width: 0 !important; padding: 0 !important; }
-    .product-col {
-      display: block !important;
-      width: 100% !important;
-      padding: 0 28px 32px 28px !important;
-    }
-    .product-img {
-      width: 100% !important;
-      height: auto !important;
-    }
+@media only screen and (max-width: 480px) {
+  .email-wrapper { width: 100% !important; }
+
+  /* Margin + gutter columns vanish */
+  .col-margin,
+  .col-gutter {
+    display: none !important;
+    width: 0 !important;
+    max-width: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    mso-hide: all;
   }
+
+  /* Product columns stack full-width */
+  .product-col {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 0 32px 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Image crop wrapper releases on mobile — full height shows */
+  .img-crop {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Image fills full card width on mobile */
+  .product-img {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+}
 </style>
 </head>
-<body style="margin:0;padding:0;background-color:#F5F4EE;">
+<body style="margin:0;padding:0;background-color:#F0EFE9;">
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F5F4EE;">
-<tr><td align="center" style="padding:0;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F0EFE9;">
+<tr><td align="center" style="padding:24px 0;">
 
-<!-- EMAIL WRAPPER -->
+<!-- ══════════════════ EMAIL WRAPPER ══════════════════ -->
 <table class="email-wrapper" width="600" cellpadding="0" cellspacing="0" border="0"
   style="max-width:600px;width:100%;background-color:#EBEADF;">
 
   <!-- HERO IMAGE -->
   <tr>
-    <td style="padding:0;line-height:0;">
-      <img class="hero-img"
-        src="https://cdn.jsdelivr.net/gh/elaiskai/lega-email-assets@main/campaigns/C05/hero.jpg"
-        alt="Vidurnakčio kolekcija – LEGA"
-        width="600" style="display:block;width:100%;max-width:600px;height:auto;">
+    <td style="padding:0;line-height:0;font-size:0;">
+      <img src="https://cdn.jsdelivr.net/gh/elaiskai/lega-email-assets@main/campaigns/C05/hero.jpg"
+        alt="Vidurnakčio kolekcija" width="600"
+        style="display:block;width:100%;max-width:600px;height:auto;">
     </td>
   </tr>
 
   <!-- DARK TITLE BLOCK -->
   <tr>
-    <td style="background-color:#1A1A1A;padding:40px 40px 36px 40px;text-align:center;">
-      <p style="margin:0 0 14px 0;font-family:'Outfit',Helvetica,Arial,sans-serif;
-        font-size:11px;letter-spacing:0.45em;color:#8E7B5C;text-transform:uppercase;">
+    <td style="background-color:#1A1A1A;padding:40px 44px 38px;text-align:center;">
+      <p style="margin:0 0 12px;font-family:'Outfit',Helvetica,Arial,sans-serif;
+        font-size:11px;letter-spacing:0.48em;color:#8E7B5C;text-transform:uppercase;">
         L E G A
       </p>
-      <h1 style="margin:0 0 8px 0;font-family:'Cormorant Garamond',Georgia,serif;
-        font-size:32px;font-weight:500;line-height:1.2;color:#EBEADF;letter-spacing:-0.01em;">
+      <h1 style="margin:0 0 8px;font-family:'Cormorant Garamond',Georgia,serif;
+        font-size:34px;font-weight:500;line-height:1.15;color:#EBEADF;letter-spacing:0.01em;">
         Vidurnakčio kolekcija
       </h1>
       <p style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;
-        font-size:20px;font-style:italic;font-weight:400;color:#B6B7AE;">
+        font-size:19px;font-style:italic;font-weight:400;color:#B6B7AE;letter-spacing:0.03em;">
         Nakties ramybėje
       </p>
     </td>
@@ -62,70 +82,80 @@
 
   <!-- INTRO TEXT -->
   <tr>
-    <td style="background-color:#EBEADF;padding:36px 44px 32px 44px;">
+    <td style="background-color:#EBEADF;padding:36px 48px 30px;">
       <p style="margin:0;font-family:'Outfit',Helvetica,Arial,sans-serif;
-        font-size:16px;line-height:1.75;color:#1A1A1A;font-weight:300;">
+        font-size:15px;line-height:1.8;color:#2A2A2A;font-weight:300;">
         Galbūt pažįstate tą akimirką, kai namai nutyla, o kūnas pagaliau prašo švelnumo.
-        Kurdama Vidurnakčio kolekciją rinkausi tamsiai mėlynus, lietaus debesies ir juodus atspalvius,
-        minkštą viskozę ir subtilius nėrinius - kad naktis ant Jūsų odos jaustųsi rami, prabangi ir sava.
+        Kurdama Vidurnakčio kolekciją rinkausi tamsiai mėlynus, lietaus debesies ir juodus
+        atspalvius, minkštą viskozę ir subtilius nėrinius - kad naktis ant Jūsų odos jaustųsi
+        rami, prabangi ir sava.
       </p>
     </td>
   </tr>
 
-  <!-- TAUPE DIVIDER -->
+  <!-- DIVIDER -->
   <tr>
-    <td style="background-color:#EBEADF;padding:0 44px 28px 44px;">
-      <div style="height:1px;background-color:#8E7B5C;opacity:0.35;"></div>
+    <td style="background-color:#EBEADF;padding:0 48px 26px;">
+      <div style="height:1px;background-color:#8E7B5C;opacity:0.3;"></div>
     </td>
   </tr>
 
-  <!-- KOLEKCIJOS LABEL -->
+  <!-- SECTION LABEL -->
   <tr>
-    <td style="background-color:#EBEADF;padding:0 0 20px 0;text-align:center;">
+    <td style="background-color:#EBEADF;padding:0 0 18px;text-align:center;">
       <p style="margin:0;font-family:'Outfit',Helvetica,Arial,sans-serif;
-        font-size:10px;letter-spacing:0.4em;color:#8E7B5C;text-transform:uppercase;">
+        font-size:10px;letter-spacing:0.42em;color:#8E7B5C;text-transform:uppercase;">
         Šios kolekcijos modeliai
       </p>
     </td>
   </tr>
 
-  <!-- ===================== PRODUCT ROW 1 ===================== -->
+  <!-- ─────────────────── PRODUCT ROW 1 ─────────────────── -->
   <tr>
     <td style="background-color:#EBEADF;padding:0;">
       <table width="600" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <!-- LEFT MARGIN -->
           <td class="col-margin" width="28" style="padding:0;font-size:0;line-height:0;">&nbsp;</td>
 
           <!-- PRODUCT 1: FIORA -->
-          <td class="product-col" width="260" valign="top" style="padding:0 0 36px 0;">
-            <a href="https://lega.lt/products/nmv103c" style="text-decoration:none;display:block;line-height:0;">
-              <img class="product-img"
-                src="https://cdn.shopify.com/s/files/1/0955/8897/4937/files/naktinukai-su-neriniu-fiorella-t-melyna.jpg?v=1754463442"
-                alt="FIORA" width="260" height="260"
-                style="display:block;width:260px;height:260px;object-fit:cover;">
-            </a>
-            <p style="margin:14px 0 4px 0;font-family:'Outfit',Helvetica,Arial,sans-serif;
+          <td class="product-col" width="260" valign="top" style="padding:0 0 36px 0;vertical-align:top;">
+            <!-- image crop wrapper -->
+            <table class="img-crop" width="260" cellpadding="0" cellspacing="0" border="0"
+              style="width:260px;overflow:hidden;">
+              <tr>
+                <td class="img-crop" width="260" height="290"
+                  style="width:260px;height:290px;overflow:hidden;line-height:0;vertical-align:top;padding:0;">
+                  <a href="https://lega.lt/products/nmv103c" style="display:block;line-height:0;">
+                    <img class="product-img"
+                      src="https://cdn.shopify.com/s/files/1/0955/8897/4937/files/naktinukai-su-neriniu-fiorella-t-melyna.jpg?v=1754463442"
+                      alt="FIORA" width="260"
+                      style="display:block;width:260px;height:auto;min-height:290px;object-fit:cover;object-position:top center;">
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <!-- card text -->
+            <p style="margin:14px 0 3px;font-family:'Outfit',Helvetica,Arial,sans-serif;
               font-size:10px;letter-spacing:0.28em;color:#8E7B5C;text-transform:uppercase;">
               Vidurnakčio kolekcija
             </p>
-            <p style="margin:0 0 3px 0;font-family:'Cormorant Garamond',Georgia,serif;
+            <p style="margin:0 0 2px;font-family:'Cormorant Garamond',Georgia,serif;
               font-size:17px;font-weight:500;color:#1A1A1A;line-height:1.25;">
               Naktinukai su nėriniu
             </p>
-            <p style="margin:0 0 4px 0;font-family:'Cormorant Garamond',Georgia,serif;
+            <p style="margin:0 0 5px;font-family:'Cormorant Garamond',Georgia,serif;
               font-size:16px;font-style:italic;font-weight:400;color:#1A1A1A;">
               &ldquo;FIORA&rdquo;
             </p>
-            <p style="margin:0 0 8px 0;font-family:'Outfit',Helvetica,Arial,sans-serif;
-              font-size:12px;color:#8E7B5C;letter-spacing:0.04em;">
+            <p style="margin:0 0 9px;font-family:'Outfit',Helvetica,Arial,sans-serif;
+              font-size:11px;color:#8E7B5C;letter-spacing:0.06em;">
               Tamsiai mėlyna
             </p>
-            <p style="margin:0 0 10px 0;font-family:'Outfit',Helvetica,Arial,sans-serif;
-              font-size:13px;line-height:1.6;color:#444444;font-weight:300;">
+            <p style="margin:0 0 11px;font-family:'Outfit',Helvetica,Arial,sans-serif;
+              font-size:13px;line-height:1.6;color:#444;font-weight:300;">
               Laisvė ir žavesys susijungia šiuose naktiniuose ir nukelia į neaprašomo subtilumo nakties miego pasaulį.
             </p>
-            <p style="margin:0 0 14px 0;font-family:'Cormorant Garamond',Georgia,serif;
+            <p style="margin:0 0 14px;font-family:'Cormorant Garamond',Georgia,serif;
               font-size:18px;font-weight:600;color:#1A1A1A;">
               48,90 €
             </p>
@@ -138,38 +168,45 @@
             </a>
           </td>
 
-          <!-- GUTTER -->
           <td class="col-gutter" width="24" style="padding:0;font-size:0;line-height:0;">&nbsp;</td>
 
           <!-- PRODUCT 2: FLORISSE -->
-          <td class="product-col" width="260" valign="top" style="padding:0 0 36px 0;">
-            <a href="https://lega.lt/products/nmv97c" style="text-decoration:none;display:block;line-height:0;">
-              <img class="product-img"
-                src="https://cdn.shopify.com/s/files/1/0955/8897/4937/files/trumpi-viskoziniai-naktinukai-florisse-lietaus-debesies.jpg?v=1754464254"
-                alt="FLORISSE" width="260" height="260"
-                style="display:block;width:260px;height:260px;object-fit:cover;">
-            </a>
-            <p style="margin:14px 0 4px 0;font-family:'Outfit',Helvetica,Arial,sans-serif;
+          <td class="product-col" width="260" valign="top" style="padding:0 0 36px 0;vertical-align:top;">
+            <table class="img-crop" width="260" cellpadding="0" cellspacing="0" border="0"
+              style="width:260px;overflow:hidden;">
+              <tr>
+                <td class="img-crop" width="260" height="290"
+                  style="width:260px;height:290px;overflow:hidden;line-height:0;vertical-align:top;padding:0;">
+                  <a href="https://lega.lt/products/nmv97c" style="display:block;line-height:0;">
+                    <img class="product-img"
+                      src="https://cdn.shopify.com/s/files/1/0955/8897/4937/files/trumpi-viskoziniai-naktinukai-florisse-lietaus-debesies.jpg?v=1754464254"
+                      alt="FLORISSE" width="260"
+                      style="display:block;width:260px;height:auto;min-height:290px;object-fit:cover;object-position:top center;">
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <p style="margin:14px 0 3px;font-family:'Outfit',Helvetica,Arial,sans-serif;
               font-size:10px;letter-spacing:0.28em;color:#8E7B5C;text-transform:uppercase;">
               Vidurnakčio kolekcija
             </p>
-            <p style="margin:0 0 3px 0;font-family:'Cormorant Garamond',Georgia,serif;
+            <p style="margin:0 0 2px;font-family:'Cormorant Garamond',Georgia,serif;
               font-size:17px;font-weight:500;color:#1A1A1A;line-height:1.25;">
               Viskoziniai naktinukai
             </p>
-            <p style="margin:0 0 4px 0;font-family:'Cormorant Garamond',Georgia,serif;
+            <p style="margin:0 0 5px;font-family:'Cormorant Garamond',Georgia,serif;
               font-size:16px;font-style:italic;font-weight:400;color:#1A1A1A;">
               &ldquo;FLORISSE&rdquo;
             </p>
-            <p style="margin:0 0 8px 0;font-family:'Outfit',Helvetica,Arial,sans-serif;
-              font-size:12px;color:#8E7B5C;letter-spacing:0.04em;">
+            <p style="margin:0 0 9px;font-family:'Outfit',Helvetica,Arial,sans-serif;
+              font-size:11px;color:#8E7B5C;letter-spacing:0.06em;">
               Lietaus debesies
             </p>
-            <p style="margin:0 0 10px 0;font-family:'Outfit',Helvetica,Arial,sans-serif;
-              font-size:13px;line-height:1.6;color:#444444;font-weight:300;">
+            <p style="margin:0 0 11px;font-family:'Outfit',Helvetica,Arial,sans-serif;
+              font-size:13px;line-height:1.6;color:#444;font-weight:300;">
               Tarsi pirmieji saulės spinduliai, šie naktiniai švelniai glosto, suteikdami lengvumo ir elegancijos pojūčius.
             </p>
-            <p style="margin:0 0 14px 0;font-family:'Cormorant Garamond',Georgia,serif;
+            <p style="margin:0 0 14px;font-family:'Cormorant Garamond',Georgia,serif;
               font-size:18px;font-weight:600;color:#1A1A1A;">
               44,90 €
             </p>
@@ -182,57 +219,63 @@
             </a>
           </td>
 
-          <!-- RIGHT MARGIN -->
           <td class="col-margin" width="28" style="padding:0;font-size:0;line-height:0;">&nbsp;</td>
         </tr>
       </table>
     </td>
   </tr>
 
-  <!-- THIN MID DIVIDER -->
+  <!-- MID DIVIDER -->
   <tr>
-    <td style="background-color:#EBEADF;padding:0 44px 28px 44px;">
-      <div style="height:1px;background-color:#B6B7AE;opacity:0.45;"></div>
+    <td style="background-color:#EBEADF;padding:0 48px 28px;">
+      <div style="height:1px;background-color:#B6B7AE;opacity:0.4;"></div>
     </td>
   </tr>
 
-  <!-- ===================== PRODUCT ROW 2 ===================== -->
+  <!-- ─────────────────── PRODUCT ROW 2 ─────────────────── -->
   <tr>
     <td style="background-color:#EBEADF;padding:0;">
       <table width="600" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <!-- LEFT MARGIN -->
           <td class="col-margin" width="28" style="padding:0;font-size:0;line-height:0;">&nbsp;</td>
 
           <!-- PRODUCT 3: PERLA -->
-          <td class="product-col" width="260" valign="top" style="padding:0 0 36px 0;">
-            <a href="https://lega.lt/products/nmv61" style="text-decoration:none;display:block;line-height:0;">
-              <img class="product-img"
-                src="https://cdn.shopify.com/s/files/1/0955/8897/4937/files/viskoziniai-naktiniai-perla-juodi.jpg?v=1754466834"
-                alt="PERLA" width="260" height="260"
-                style="display:block;width:260px;height:260px;object-fit:cover;">
-            </a>
-            <p style="margin:14px 0 4px 0;font-family:'Outfit',Helvetica,Arial,sans-serif;
+          <td class="product-col" width="260" valign="top" style="padding:0 0 36px 0;vertical-align:top;">
+            <table class="img-crop" width="260" cellpadding="0" cellspacing="0" border="0"
+              style="width:260px;overflow:hidden;">
+              <tr>
+                <td class="img-crop" width="260" height="290"
+                  style="width:260px;height:290px;overflow:hidden;line-height:0;vertical-align:top;padding:0;">
+                  <a href="https://lega.lt/products/nmv61" style="display:block;line-height:0;">
+                    <img class="product-img"
+                      src="https://cdn.shopify.com/s/files/1/0955/8897/4937/files/viskoziniai-naktiniai-perla-juodi.jpg?v=1754466834"
+                      alt="PERLA" width="260"
+                      style="display:block;width:260px;height:auto;min-height:290px;object-fit:cover;object-position:top center;">
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <p style="margin:14px 0 3px;font-family:'Outfit',Helvetica,Arial,sans-serif;
               font-size:10px;letter-spacing:0.28em;color:#8E7B5C;text-transform:uppercase;">
               Vidurnakčio kolekcija
             </p>
-            <p style="margin:0 0 3px 0;font-family:'Cormorant Garamond',Georgia,serif;
+            <p style="margin:0 0 2px;font-family:'Cormorant Garamond',Georgia,serif;
               font-size:17px;font-weight:500;color:#1A1A1A;line-height:1.25;">
               Viskoziniai naktiniai
             </p>
-            <p style="margin:0 0 4px 0;font-family:'Cormorant Garamond',Georgia,serif;
+            <p style="margin:0 0 5px;font-family:'Cormorant Garamond',Georgia,serif;
               font-size:16px;font-style:italic;font-weight:400;color:#1A1A1A;">
               &ldquo;PERLA&rdquo;
             </p>
-            <p style="margin:0 0 8px 0;font-family:'Outfit',Helvetica,Arial,sans-serif;
-              font-size:12px;color:#8E7B5C;letter-spacing:0.04em;">
+            <p style="margin:0 0 9px;font-family:'Outfit',Helvetica,Arial,sans-serif;
+              font-size:11px;color:#8E7B5C;letter-spacing:0.06em;">
               Juodi
             </p>
-            <p style="margin:0 0 10px 0;font-family:'Outfit',Helvetica,Arial,sans-serif;
-              font-size:13px;line-height:1.6;color:#444444;font-weight:300;">
+            <p style="margin:0 0 11px;font-family:'Outfit',Helvetica,Arial,sans-serif;
+              font-size:13px;line-height:1.6;color:#444;font-weight:300;">
               Žavingi ir kerintys naktiniai, iš prabangaus viskozinio trikotažo, sukurti ypatingoms naktims.
             </p>
-            <p style="margin:0 0 14px 0;font-family:'Cormorant Garamond',Georgia,serif;
+            <p style="margin:0 0 14px;font-family:'Cormorant Garamond',Georgia,serif;
               font-size:18px;font-weight:600;color:#1A1A1A;">
               46,90 €
             </p>
@@ -245,39 +288,46 @@
             </a>
           </td>
 
-          <!-- GUTTER -->
           <td class="col-gutter" width="24" style="padding:0;font-size:0;line-height:0;">&nbsp;</td>
 
           <!-- PRODUCT 4: MYSTIQUE -->
-          <td class="product-col" width="260" valign="top" style="padding:0 0 36px 0;">
-            <a href="https://lega.lt/products/laisvi-naktinukai-su-neriniais-mystique-tamsiai-melyna"
-              style="text-decoration:none;display:block;line-height:0;">
-              <img class="product-img"
-                src="https://cdn.shopify.com/s/files/1/0955/8897/4937/files/NMV79prmelyna.jpg?v=1770657391"
-                alt="MYSTIQUE" width="260" height="260"
-                style="display:block;width:260px;height:260px;object-fit:cover;">
-            </a>
-            <p style="margin:14px 0 4px 0;font-family:'Outfit',Helvetica,Arial,sans-serif;
+          <td class="product-col" width="260" valign="top" style="padding:0 0 36px 0;vertical-align:top;">
+            <table class="img-crop" width="260" cellpadding="0" cellspacing="0" border="0"
+              style="width:260px;overflow:hidden;">
+              <tr>
+                <td class="img-crop" width="260" height="290"
+                  style="width:260px;height:290px;overflow:hidden;line-height:0;vertical-align:top;padding:0;">
+                  <a href="https://lega.lt/products/laisvi-naktinukai-su-neriniais-mystique-tamsiai-melyna"
+                    style="display:block;line-height:0;">
+                    <img class="product-img"
+                      src="https://cdn.shopify.com/s/files/1/0955/8897/4937/files/NMV79prmelyna.jpg?v=1770657391"
+                      alt="MYSTIQUE" width="260"
+                      style="display:block;width:260px;height:auto;min-height:290px;object-fit:cover;object-position:top center;">
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <p style="margin:14px 0 3px;font-family:'Outfit',Helvetica,Arial,sans-serif;
               font-size:10px;letter-spacing:0.28em;color:#8E7B5C;text-transform:uppercase;">
               Vidurnakčio kolekcija
             </p>
-            <p style="margin:0 0 3px 0;font-family:'Cormorant Garamond',Georgia,serif;
+            <p style="margin:0 0 2px;font-family:'Cormorant Garamond',Georgia,serif;
               font-size:17px;font-weight:500;color:#1A1A1A;line-height:1.25;">
               Naktinukai su nėriniais
             </p>
-            <p style="margin:0 0 4px 0;font-family:'Cormorant Garamond',Georgia,serif;
+            <p style="margin:0 0 5px;font-family:'Cormorant Garamond',Georgia,serif;
               font-size:16px;font-style:italic;font-weight:400;color:#1A1A1A;">
               &ldquo;MYSTIQUE&rdquo;
             </p>
-            <p style="margin:0 0 8px 0;font-family:'Outfit',Helvetica,Arial,sans-serif;
-              font-size:12px;color:#8E7B5C;letter-spacing:0.04em;">
+            <p style="margin:0 0 9px;font-family:'Outfit',Helvetica,Arial,sans-serif;
+              font-size:11px;color:#8E7B5C;letter-spacing:0.06em;">
               Tamsiai mėlyna
             </p>
-            <p style="margin:0 0 10px 0;font-family:'Outfit',Helvetica,Arial,sans-serif;
-              font-size:13px;line-height:1.6;color:#444444;font-weight:300;">
+            <p style="margin:0 0 11px;font-family:'Outfit',Helvetica,Arial,sans-serif;
+              font-size:13px;line-height:1.6;color:#444;font-weight:300;">
               Išskirtinio dizaino ir išskirtinio patogumo naktiniai marškiniai - subtilus grožis ir patogumas viename drabužyje.
             </p>
-            <p style="margin:0 0 14px 0;font-family:'Cormorant Garamond',Georgia,serif;
+            <p style="margin:0 0 14px;font-family:'Cormorant Garamond',Georgia,serif;
               font-size:18px;font-weight:600;color:#1A1A1A;">
               46,90 €
             </p>
@@ -290,7 +340,6 @@
             </a>
           </td>
 
-          <!-- RIGHT MARGIN -->
           <td class="col-margin" width="28" style="padding:0;font-size:0;line-height:0;">&nbsp;</td>
         </tr>
       </table>
@@ -299,22 +348,22 @@
 
   <!-- BOTTOM DIVIDER -->
   <tr>
-    <td style="background-color:#EBEADF;padding:0 44px;">
-      <div style="height:1px;background-color:#8E7B5C;opacity:0.35;"></div>
+    <td style="background-color:#EBEADF;padding:4px 48px 0;">
+      <div style="height:1px;background-color:#8E7B5C;opacity:0.3;"></div>
     </td>
   </tr>
 
   <!-- SIGN-OFF -->
   <tr>
-    <td style="background-color:#EBEADF;padding:32px 44px 44px 44px;text-align:center;">
-      <p style="margin:0 0 22px 0;font-family:'Outfit',Helvetica,Arial,sans-serif;
-        font-size:14px;line-height:1.6;color:#1A1A1A;font-weight:300;">
+    <td style="background-color:#EBEADF;padding:32px 48px 44px;text-align:center;">
+      <p style="margin:0 0 22px;font-family:'Outfit',Helvetica,Arial,sans-serif;
+        font-size:14px;line-height:1.6;color:#2A2A2A;font-weight:300;letter-spacing:0.01em;">
         Su šiluma, LEGA dizainerė Lina
       </p>
       <a href="https://lega.lt"
         style="display:inline-block;background-color:#1A1A1A;color:#EBEADF;
         font-family:'Outfit',Helvetica,Arial,sans-serif;font-size:11px;font-weight:500;
-        letter-spacing:0.25em;text-transform:uppercase;text-decoration:none;
+        letter-spacing:0.26em;text-transform:uppercase;text-decoration:none;
         padding:16px 40px;">
         Atrasti kolekcijos ramybę
       </a>
@@ -322,7 +371,7 @@
   </tr>
 
 </table>
-<!-- END EMAIL WRAPPER -->
+<!-- ══════════════════ END EMAIL ══════════════════ -->
 
 </td></tr>
 </table>
