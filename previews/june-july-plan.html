@@ -5,206 +5,292 @@
 <title>LEGA · Birželis–Liepa 2026</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: Georgia, serif; background: #f5f4ef; color: #1a1a1a; padding: 32px 16px; }
-  .wrap { max-width: 760px; margin: 0 auto; }
-  h1 { font-size: 20px; letter-spacing: 0.35em; margin-bottom: 4px; }
-  .meta-top { font-family: Arial, sans-serif; font-size: 12px; color: #8e7b5c; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 40px; }
-  .card { background: #fff; border-left: 4px solid #8e7b5c; margin-bottom: 14px; padding: 22px 26px; }
-  .card-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 14px; flex-wrap: wrap; }
-  .num { font-family: Arial, sans-serif; font-size: 11px; background: #8e7b5c; color: #fff; padding: 3px 9px; letter-spacing: 0.1em; text-transform: uppercase; }
-  .date { font-family: Arial, sans-serif; font-size: 12px; color: #555; }
-  .seg { font-family: Arial, sans-serif; font-size: 11px; background: #ebeadf; color: #555; padding: 3px 8px; }
-  .subject { font-size: 18px; font-style: italic; color: #1a1a1a; margin-bottom: 4px; line-height: 1.4; }
-  .preheader { font-family: Arial, sans-serif; font-size: 12px; color: #888; margin-bottom: 14px; }
-  .section { margin-bottom: 12px; }
-  .label { font-family: Arial, sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0.14em; color: #aaa; margin-bottom: 5px; }
-  .products { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 4px; }
-  .product { font-family: Arial, sans-serif; font-size: 12px; background: #f9f8f5; border: 1px solid #e5e3dc; padding: 5px 10px; color: #333; }
+  body { font-family: Georgia, serif; background: #f0ede6; color: #1a1a1a; padding: 40px 16px; }
+  .wrap { max-width: 740px; margin: 0 auto; }
+
+  h1 { font-size: 18px; letter-spacing: 0.4em; margin-bottom: 4px; }
+  .sub { font-family: Arial, sans-serif; font-size: 11px; color: #8e7b5c; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 44px; }
+
+  .card { background: #fff; margin-bottom: 12px; }
+  .card-top { padding: 22px 24px 16px; border-left: 4px solid #8e7b5c; }
+  .card-top.needs { border-left-color: #c0392b; }
+
+  .badges { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+  .badge { font-family: Arial, sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; padding: 3px 8px; }
+  .badge.num { background: #8e7b5c; color: #fff; }
+  .badge.num.red { background: #c0392b; }
+  .badge.date { background: #ebeadf; color: #555; }
+  .badge.seg { background: #ebeadf; color: #555; }
+  .badge.warn { background: #fdf0ee; color: #c0392b; border: 1px solid #f5c6c0; }
+
+  .subject { font-size: 17px; font-style: italic; margin-bottom: 3px; line-height: 1.4; }
+  .preheader { font-family: Arial, sans-serif; font-size: 12px; color: #999; margin-bottom: 16px; }
+
+  .row { display: flex; gap: 24px; flex-wrap: wrap; }
+  .col { flex: 1; min-width: 200px; }
+  .label { font-family: Arial, sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0.13em; color: #bbb; margin-bottom: 6px; }
+  .products { display: flex; flex-direction: column; gap: 4px; }
+  .product { font-family: Arial, sans-serif; font-size: 12px; color: #333; background: #f7f5f0; padding: 5px 9px; }
   .product em { color: #8e7b5c; font-style: normal; font-weight: bold; }
-  .why { font-family: Arial, sans-serif; font-size: 13px; color: #555; line-height: 1.65; }
+  .why { font-family: Arial, sans-serif; font-size: 12.5px; color: #555; line-height: 1.7; }
+
+  .needs-box { background: #fdf0ee; border-top: 1px solid #f5c6c0; padding: 16px 24px; }
+  .needs-label { font-family: Arial, sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0.13em; color: #c0392b; margin-bottom: 6px; }
+  .needs-text { font-family: Arial, sans-serif; font-size: 12.5px; color: #7a1a10; line-height: 1.7; }
+
+  .legend { display: flex; gap: 20px; margin-bottom: 28px; flex-wrap: wrap; }
+  .legend-item { display: flex; align-items: center; gap: 7px; font-family: Arial, sans-serif; font-size: 11px; color: #666; }
+  .dot { width: 10px; height: 10px; flex-shrink: 0; }
+  .dot.green { background: #8e7b5c; }
+  .dot.red { background: #c0392b; }
 </style>
 </head>
 <body>
 <div class="wrap">
 
   <h1>L E G A</h1>
-  <div class="meta-top">Kampanijų planas · Birželis–Liepa 2026 · C09–C16 · visi ~1074 prenumeratoriai</div>
+  <div class="sub">Kampanijų planas · Birž.–Liepa 2026 · C09–C16 · visi ~1074 prenumeratoriai</div>
 
+  <div class="legend">
+    <div class="legend-item"><div class="dot green"></div> Galima statyti iškart</div>
+    <div class="legend-item"><div class="dot red"></div> Reikia informacijos iš Linos</div>
+  </div>
+
+  <!-- C09 ✅ -->
   <div class="card">
-    <div class="card-head">
-      <span class="num">C09</span>
-      <span class="date">Antradienis, birž. 9</span>
-      <span class="seg">Visi · 1074</span>
-    </div>
-    <div class="subject">„4 lino drabužiai atostogų lagaminui"</div>
-    <div class="preheader">Lengva kapsulė, kuri dera tarpusavyje ir tinka kelioms vasaros progoms.</div>
-    <div class="section">
-      <div class="label">Produktai</div>
-      <div class="products">
-        <span class="product">Lininė suknelė <em>„BELLA"</em> ochra · 55,79€</span>
-        <span class="product">Palaidinė be rankovių <em>„BRIZA"</em> · 59€</span>
-        <span class="product">Lininės kelnės <em>„VESPERA"</em> ochra · 51,73€</span>
-        <span class="product">Lininis švarkelis <em>„ISLA"</em> balta · 57,26€</span>
+    <div class="card-top">
+      <div class="badges">
+        <span class="badge num">C09</span>
+        <span class="badge date">Antradienis, birž. 9</span>
+        <span class="badge seg">Visi · 1074</span>
       </div>
-    </div>
-    <div class="section">
-      <div class="label">Kodėl</div>
-      <div class="why">Kampanija pristato atostogų lino kapsulę iš keturių lengvų modelių: „BELLA", „BRIZA", „VESPERA" ir „ISLA". Idėja aktuali prieš vasaros keliones, kai klientė ieško drabužių, kurie neužimtų daug vietos, bet atrodytų apgalvotai nuo pusryčių terasoje iki vakarinio pasivaikščiojimo.</div>
+      <div class="subject">„4 lino drabužiai Jūsų atostogų lagaminui"</div>
+      <div class="preheader">BELLA, BRIZA, VESPERA ir ISLA — lengvai derinami vasaros kelionėms.</div>
+      <div class="row">
+        <div class="col">
+          <div class="label">Produktai</div>
+          <div class="products">
+            <span class="product">Lininė suknelė <em>„BELLA"</em> ochra · 55,79€</span>
+            <span class="product">Palaidinė be rankovių <em>„BRIZA"</em> · 59€</span>
+            <span class="product">Lininės kelnės <em>„VESPERA"</em> ochra · 51,73€</span>
+            <span class="product">Lininis švarkelis <em>„ISLA"</em> balta · 57,26€</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="label">Kodėl</div>
+          <div class="why">Ši kampanija praktiškai parodo, kaip iš kelių kokybiškų lino drabužių susikurti lengvą atostogų kapsulę. Tai aktualu birželio pradžioje, kai klientės planuoja keliones, savaitgalius pajūryje ir vasaros progų garderobą.</div>
+        </div>
+      </div>
     </div>
   </div>
 
+  <!-- C10 ⚠️ -->
   <div class="card">
-    <div class="card-head">
-      <span class="num">C10</span>
-      <span class="date">Ketvirtadienis, birž. 11</span>
-      <span class="seg">Visi · 1074</span>
-    </div>
-    <div class="subject">„Kodėl jos grįžta į LEGA"</div>
-    <div class="preheader">Trumpi klienčių atsiliepimai prie suknelių, kurios jau tapo vasaros favoritėmis.</div>
-    <div class="section">
-      <div class="label">Produktai</div>
-      <div class="products">
-        <span class="product">Ilga suknelė <em>„SMILGA"</em> smilgos · 99€</span>
-        <span class="product">Trumpa suknelė <em>„LAISVĖ"</em> smilgos · 85€</span>
-        <span class="product">Suknelė <em>„RIVIERA"</em> · 119€</span>
+    <div class="card-top needs">
+      <div class="badges">
+        <span class="badge num red">C10</span>
+        <span class="badge date">Ketvirtadienis, birž. 11</span>
+        <span class="badge seg">Visi · 1074</span>
+        <span class="badge warn">⚠ Reikia info</span>
+      </div>
+      <div class="subject">„Modeliai, prie kurių klientės grįžta"</div>
+      <div class="preheader">Tikri atsiliepimai apie „SMILGA", „LAISVĖ" ir „RIVIERA".</div>
+      <div class="row">
+        <div class="col">
+          <div class="label">Produktai</div>
+          <div class="products">
+            <span class="product">Ilga suknelė <em>„SMILGA"</em> smilgos · 99€</span>
+            <span class="product">Trumpa suknelė <em>„LAISVĖ"</em> smilgos · 85€</span>
+            <span class="product">Suknelė <em>„RIVIERA"</em> · 119€</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="label">Kodėl</div>
+          <div class="why">Socialinis įrodymas sustiprina pasitikėjimą, ypač premium auditorijai. Tikri klienčių žodžiai padeda parodyti, kaip modeliai atrodo ir jaučiasi realiame gyvenime, ne tik fotosesijoje.</div>
+        </div>
       </div>
     </div>
-    <div class="section">
-      <div class="label">Kodėl</div>
-      <div class="why">Kampanijos ašis - socialinis įrodymas: parodyti „SMILGA", „LAISVĖ" ir „RIVIERA" per realių klienčių patirtį. Brandi klientė dažnai vertina ne tik vaizdą, bet ir kitų moterų patvirtintą patogumą, kritimą ir dėvėjimo jausmą.</div>
+    <div class="needs-box">
+      <div class="needs-label">Reikia iš Linos / Shopify</div>
+      <div class="needs-text">3–5 tikrų atsiliepimų apie „SMILGA", „LAISVĖ" ir „RIVIERA" modelius iš Shopify / Judge.me — klientės vardas arba inicialai, atsiliepimo tekstas, įvertinimas. Atsiliepimai negali būti išgalvoti.</div>
     </div>
   </div>
 
+  <!-- C11 ⚠️ -->
   <div class="card">
-    <div class="card-head">
-      <span class="num">C11</span>
-      <span class="date">Antradienis, birž. 16</span>
-      <span class="seg">Visi · 1074</span>
-    </div>
-    <div class="subject">„Viena suknelė, trys vasaros nuotaikos"</div>
-    <div class="preheader">„WHISPER" mėlyna - dienai, vakarui ir ramiam laikui prie vandens.</div>
-    <div class="section">
-      <div class="label">Produktai</div>
-      <div class="products">
-        <span class="product">Laisvalaikio suknelė <em>„WHISPER"</em> mėlyna · 53,94€ — pagrindinis modelis</span>
-        <span class="product">3 lookbook stiliai: diena / vakaras / paplūdimys</span>
+    <div class="card-top needs">
+      <div class="badges">
+        <span class="badge num red">C11</span>
+        <span class="badge date">Antradienis, birž. 16</span>
+        <span class="badge seg">Visi · 1074</span>
+        <span class="badge warn">⚠ Reikia info</span>
+      </div>
+      <div class="subject">„Viena „WHISPER" suknelė — trys vasaros progos"</div>
+      <div class="preheader">Diena, vakaras ir paplūdimys su tuo pačiu mėlynu modeliu.</div>
+      <div class="row">
+        <div class="col">
+          <div class="label">Produktai</div>
+          <div class="products">
+            <span class="product">Laisvalaikio suknelė <em>„WHISPER"</em> mėlyna · 53,94€</span>
+            <span class="product">3 stilizavimo situacijos: diena / vakaras / paplūdimys</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="label">Kodėl</div>
+          <div class="why">Vieno modelio stilizavimo gidas padeda klientei aiškiai įsivaizduoti, kiek daug progų gali dengti vienas drabužis. Tai mažina pirkimo dvejonę ir sustiprina „protingo pasirinkimo" jausmą.</div>
+        </div>
       </div>
     </div>
-    <div class="section">
-      <div class="label">Kodėl</div>
-      <div class="why">Kampanija veikia kaip stilizavimo gidas, rodantis vieną modelį trijose situacijose. Tai padeda klientei lengviau įsivaizduoti, kaip „WHISPER" įsilieja į jos kasdienybę ir tampa ne vienu pirkiniu, o universaliu vasaros sprendimu. Reikia 3 nuotraukų iš Linos fotosesijų.</div>
+    <div class="needs-box">
+      <div class="needs-label">Reikia iš Linos</div>
+      <div class="needs-text">3 realios nuotraukos, kuriose mėlyna „WHISPER" suknelė matyti skirtinguose kontekstuose — dienai (pvz. miesto pasivaikščiojimas), vakarui (vakarienė / renginys) ir paplūdimiui. Jei tokių nuotraukų nėra — kampanija pakeičiama kita arba modelis keičiamas į tą, kurio yra pakankamai nuotraukų.</div>
     </div>
   </div>
 
+  <!-- C12 ✅ -->
   <div class="card">
-    <div class="card-head">
-      <span class="num">C12</span>
-      <span class="date">Ketvirtadienis, birž. 19</span>
-      <span class="seg">Visi · 1074</span>
-    </div>
-    <div class="subject">„Lengvoms birželio naktims"</div>
-    <div class="preheader">Minkšti naktinukai ir satino chalatas šiltam, ramiam vasaros vakarui.</div>
-    <div class="section">
-      <div class="label">Produktai</div>
-      <div class="products">
-        <span class="product">Naktinukai su nėriniu <em>„CLARENTE"</em> šilko rožinė · 40,9€</span>
-        <span class="product">Naktinukai atvira nugara <em>„VENEZIA"</em> jūros bangos · 48,9€</span>
-        <span class="product">Satino chalatas <em>„COCCO"</em> pastelinių gėlių · 64,9€</span>
+    <div class="card-top">
+      <div class="badges">
+        <span class="badge num">C12</span>
+        <span class="badge date">Ketvirtadienis, birž. 19</span>
+        <span class="badge seg">Visi · 1074</span>
       </div>
-    </div>
-    <div class="section">
-      <div class="label">Kodėl</div>
-      <div class="why">Kampanija pristato vasaros miego kolekciją per šiltos nakties pojūtį - lengvumą, švelnumą ir estetiką namuose. „CLARENTE", „VENEZIA" ir „COCCO" tinka laikotarpiui, kai klientė ieško patogumo karštesnėms naktims, bet nenori atsisakyti moteriško, subtilaus įvaizdžio.</div>
+      <div class="subject">„Vasaros naktys, kai norisi švelnumo"</div>
+      <div class="preheader">„CLARENTE", „VENEZIA" ir „COCCO" — lengvi pasirinkimai šiltam vakarui.</div>
+      <div class="row">
+        <div class="col">
+          <div class="label">Produktai</div>
+          <div class="products">
+            <span class="product">Naktinukai su nėriniu <em>„CLARENTE"</em> šilko rožinė · 40,9€</span>
+            <span class="product">Naktinukai atvira nugara <em>„VENEZIA"</em> jūros bangos · 48,9€</span>
+            <span class="product">Satino chalatas <em>„COCCO"</em> pastelinių gėlių · 64,9€</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="label">Kodėl</div>
+          <div class="why">Miego ir namų aprangos kampanija leidžia LEGA parodyti intymesnę, švelnesnę vasaros pusę. Šiltų naktų pojūtis gerai tinka birželio viduriui ir kuria emocinį, ne vien funkcionalų pirkimo motyvą.</div>
+        </div>
+      </div>
     </div>
   </div>
 
+  <!-- C13 ⚠️ -->
   <div class="card">
-    <div class="card-head">
-      <span class="num">C13</span>
-      <span class="date">Antradienis, birž. 23</span>
-      <span class="seg">Visi · 1074</span>
-    </div>
-    <div class="subject">„Linos vasaros pasirinkimai"</div>
-    <div class="preheader">Trys modeliai, kuriuos LEGA dizainerė šią vasarą rinktųsi pati.</div>
-    <div class="section">
-      <div class="label">Produktai</div>
-      <div class="products">
-        <span class="product">Suknelė <em>„GRACIJA"</em> ochra · 139€ — Linos favoritas nr. 1</span>
-        <span class="product">Palaidinė be rankovių <em>„BRIZA"</em> lagūnos žalsva · 59€</span>
-        <span class="product">Ilga suknelė <em>„ŠVIESA"</em> lagūnos žalsva · 129€</span>
+    <div class="card-top needs">
+      <div class="badges">
+        <span class="badge num red">C13</span>
+        <span class="badge date">Antradienis, birž. 23</span>
+        <span class="badge seg">Visi · 1074</span>
+        <span class="badge warn">⚠ Reikia info</span>
+      </div>
+      <div class="subject">„Linos vasaros favoritai"</div>
+      <div class="preheader">Trys modeliai, kuriuos dizainerė šią vasarą išskirtų pirmiausia.</div>
+      <div class="row">
+        <div class="col">
+          <div class="label">Produktai</div>
+          <div class="products">
+            <span class="product">Suknelė <em>„GRACIJA"</em> ochra · 139€</span>
+            <span class="product">Palaidinė be rankovių <em>„BRIZA"</em> lagūnos žalsva · 59€</span>
+            <span class="product">Ilga suknelė <em>„ŠVIESA"</em> lagūnos žalsva · 129€</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="label">Kodėl</div>
+          <div class="why">Asmeninis dizainerės balsas kuria artumą ir padeda klientei jausti, kad renkasi ne masinį produktą, o apgalvotą kūrinį. Sustiprina Linos autorystę ir pasitikėjimą kolekcija.</div>
+        </div>
       </div>
     </div>
-    <div class="section">
-      <div class="label">Kodėl</div>
-      <div class="why">Kampanija paremta asmeniniu dizainerės Linos rekomendavimu, todėl laiškas tampa artimesnis ir labiau kuruotas. Trys modeliai pristatomi ne kaip atsitiktiniai naujienų modeliai, o kaip apgalvoti vasaros favoritai su trumpu komentaru apie kiekvieną.</div>
+    <div class="needs-box">
+      <div class="needs-label">Reikia iš Linos</div>
+      <div class="needs-text">Linos komentaras apie kiekvieną iš 3 modelių — po 1–2 sakinius jos pačios žodžiais: kodėl ji pati rinktųsi šį modelį, kas jame ypač patinka, kokiai progai ar nuotaikai jis tinka. Tekstas turi būti tikras, ne sugeneruotas.</div>
     </div>
   </div>
 
+  <!-- C14 ⚠️ -->
   <div class="card">
-    <div class="card-head">
-      <span class="num">C14</span>
-      <span class="date">Ketvirtadienis, birž. 26</span>
-      <span class="seg">Visi · 1074</span>
-    </div>
-    <div class="subject">„Raskite savo vasaros atspalvį"</div>
-    <div class="preheader">Ochra, lagūnos žalsva ar dangaus melsva - trys ramūs keliai į vasaros garderobą.</div>
-    <div class="section">
-      <div class="label">Produktai — 3 spalvų grupės</div>
-      <div class="products">
-        <span class="product"><em>Ochra:</em> BELLA · GRACIJA · VESPERA</span>
-        <span class="product"><em>Lagūnos žalsva:</em> NIDA · ŠVIESA · BRIZA · SKRAISTĖ</span>
-        <span class="product"><em>Dangaus melsva:</em> GRACIJA · VĖJA · ŠVIESA</span>
+    <div class="card-top needs">
+      <div class="badges">
+        <span class="badge num red">C14</span>
+        <span class="badge date">Ketvirtadienis, birž. 26</span>
+        <span class="badge seg">Visi · 1074</span>
+        <span class="badge warn">⚠ Reikia info</span>
+      </div>
+      <div class="subject">„Trys vasaros atspalviai Jūsų garderobui"</div>
+      <div class="preheader">Ochra, žalsva ir melsva — kaip išsirinkti sau artimiausią nuotaiką.</div>
+      <div class="row">
+        <div class="col">
+          <div class="label">Spalvų grupės</div>
+          <div class="products">
+            <span class="product"><em>Ochra:</em> BELLA · GRACIJA · VESPERA</span>
+            <span class="product"><em>Lagūnos žalsva:</em> NIDA · ŠVIESA · BRIZA · SKRAISTĖ</span>
+            <span class="product"><em>Dangaus melsva:</em> GRACIJA · VĖJA · ŠVIESA</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="label">Kodėl</div>
+          <div class="why">Spalvų gidas padeda struktūruoti kolekciją ir palengvina pasirinkimą klientėms, kurios renkasi pagal toną ar nuotaiką. Veikia kaip švelnus įkvėpimas be tiesioginio spaudimo pirkti.</div>
+        </div>
       </div>
     </div>
-    <div class="section">
-      <div class="label">Kodėl</div>
-      <div class="why">Kampanija suskirsto kolekciją pagal tris vasaros spalvų kryptis, kad klientei būtų lengviau atpažinti, kas jai artima. Sukuria aiškią, estetišką naršymo logiką - klientė eina ne prie modelio, o prie savo spalvos.</div>
+    <div class="needs-box">
+      <div class="needs-label">Reikia iš Linos</div>
+      <div class="needs-text">Patvirtinimas, kad spalvų grupuotė vizualiai tiksli ir prasminga. Trumpas komentaras (1 sakinys), kokiai moteriai ar nuotaikai tinka kiekviena spalvų kryptis — pvz. „ochra — šilta, saulėta, klasikinė"; „žalsva — gaivi, natūrali, jūrinė"; „melsva — rami, vasariška, elegantiška".</div>
     </div>
   </div>
 
+  <!-- C15 ✅ -->
   <div class="card">
-    <div class="card-head">
-      <span class="num">C15</span>
-      <span class="date">Antradienis, birž. 30</span>
-      <span class="seg">Visi · 1074</span>
-    </div>
-    <div class="subject">„Dovana, kuri atrodo asmeniškai parinkta"</div>
-    <div class="preheader">Liepos vardadieniams, gimtadieniams ir vasaros progoms - su LEGA dovanų pakavimu.</div>
-    <div class="section">
-      <div class="label">Produktai</div>
-      <div class="products">
-        <span class="product">Satino chalatas <em>„COCCO"</em> pastelinių gėlių · 64,9€</span>
-        <span class="product">Pižama su šortukais <em>„SPANDI"</em> pastelinių gėlių · 49,9€</span>
-        <span class="product">Satino naktinukai <em>„VELLUTO"</em> juodi · 49,9€</span>
-        <span class="product">Suknelė <em>„GRACIJA"</em> · 139€ — premium dovana</span>
+    <div class="card-top">
+      <div class="badges">
+        <span class="badge num">C15</span>
+        <span class="badge date">Antradienis, birž. 30</span>
+        <span class="badge seg">Visi · 1074</span>
       </div>
-    </div>
-    <div class="section">
-      <div class="label">Kodėl</div>
-      <div class="why">Kampanija kreipiasi į klientę kaip į dovanotoją, nes liepa pilna asmeninių progų, kai norisi subtilios ir praktiškos dovanos. „COCCO", „SPANDI", „VELLUTO" ir „GRACIJA" pristatomi kaip skirtingo artumo pasirinkimai, o dovanų pakavimas sumažina rūpestį ir sustiprina premium patirtį.</div>
+      <div class="subject">„Dovana jai, kuri jausis asmeniška"</div>
+      <div class="preheader">Satinas, švelnios gėlės ir vasariška elegancija liepos progoms.</div>
+      <div class="row">
+        <div class="col">
+          <div class="label">Produktai</div>
+          <div class="products">
+            <span class="product">Satino chalatas <em>„COCCO"</em> pastelinių gėlių · 64,9€</span>
+            <span class="product">Pižama su šortukais <em>„SPANDI"</em> pastelinių gėlių · 49,9€</span>
+            <span class="product">Satino naktinukai <em>„VELLUTO"</em> juodi · 49,9€</span>
+            <span class="product">Suknelė <em>„GRACIJA"</em> · 139€ — premium dovana</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="label">Kodėl</div>
+          <div class="why">Liepos vardadieniai ir gimtadieniai suteikia natūralų kontekstą dovanų komunikacijai. Dovanų pakavimo akcentas padeda paskatinti pirkimą — klientė gauna ne tik drabužį, bet ir paruoštą, estetišką dovanos sprendimą.</div>
+        </div>
+      </div>
     </div>
   </div>
 
+  <!-- C16 ✅ -->
   <div class="card">
-    <div class="card-head">
-      <span class="num">C16</span>
-      <span class="date">Ketvirtadienis, liepa 2</span>
-      <span class="seg">Visi · 1074</span>
-    </div>
-    <div class="subject">„Liepa prasideda šviesiai"</div>
-    <div class="preheader">Dryžuoti, gaivūs ir šventiški modeliai pačiam vasaros pikui.</div>
-    <div class="section">
-      <div class="label">Produktai</div>
-      <div class="products">
-        <span class="product">Ilga suknelė <em>„DARNA"</em> mėlyna dryžuota · 139€</span>
-        <span class="product">Trumpa suknelė <em>„SAULĖ"</em> mėlyna dryžuota · 119€</span>
-        <span class="product">Suknelė <em>„RIVIERA"</em> žiedlapių rožinė · 119€</span>
-        <span class="product">Suknelė <em>„JŪRA"</em> rugiagėlės mėlyna · 119€</span>
+    <div class="card-top">
+      <div class="badges">
+        <span class="badge num">C16</span>
+        <span class="badge date">Ketvirtadienis, liepa 2</span>
+        <span class="badge seg">Visi · 1074</span>
       </div>
-    </div>
-    <div class="section">
-      <div class="label">Kodėl</div>
-      <div class="why">Kampanija išnaudoja liepos pradžios nuotaiką, kai vasara jau įsibėgėjusi, o klientė ieško lengvų, džiugių drabužių kelionėms, savaitgaliams ir šventėms. „DARNA", „SAULĖ", „RIVIERA" ir „JŪRA" kuria šviesų, gaivų įvaizdį, tinkantį vasaros pikui be perteklinio ryškumo.</div>
+      <div class="subject">„Liepa prasideda lengvai"</div>
+      <div class="preheader">Dryžuotos suknelės, žiedlapių rožinė ir rugiagėlių mėlyna vasarai įsibėgėjant.</div>
+      <div class="row">
+        <div class="col">
+          <div class="label">Produktai</div>
+          <div class="products">
+            <span class="product">Ilga suknelė <em>„DARNA"</em> mėlyna dryžuota · 139€</span>
+            <span class="product">Trumpa suknelė <em>„SAULĖ"</em> mėlyna dryžuota · 119€</span>
+            <span class="product">Suknelė <em>„RIVIERA"</em> žiedlapių rožinė · 119€</span>
+            <span class="product">Suknelė <em>„JŪRA"</em> rugiagėlės mėlyna · 119€</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="label">Kodėl</div>
+          <div class="why">Liepos pradžia yra stiprus sezoninis momentas vasariškiems modeliams, ypač suknelėms kelionėms ir pajūriui. Dryžuoti ir šviesūs modeliai vizualiai sustiprina vasaros piko jausmą.</div>
+        </div>
+      </div>
     </div>
   </div>
 
