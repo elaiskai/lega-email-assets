@@ -7,322 +7,87 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Outfit', sans-serif;
-    background: #F5F4EF;
-    color: #1A1A1A;
-    padding: 40px 20px 80px;
-  }
+  body { font-family: 'Outfit', sans-serif; background: #F5F4EF; color: #1A1A1A; padding: 40px 20px 80px; }
   .wrapper { max-width: 780px; margin: 0 auto; }
-
-  /* HEADER */
-  .header {
-    background: #8E7B5C;
-    padding: 48px 40px 40px;
-    border-radius: 12px 12px 0 0;
-    text-align: center;
-  }
-  .header .brand {
-    font-family: 'Outfit', sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.45em;
-    color: #EBEADF;
-    opacity: 0.8;
-    margin-bottom: 18px;
-  }
-  .header h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 38px;
-    font-weight: 400;
-    color: #FFFFFF;
-    line-height: 1.2;
-  }
+  .header { background: #8E7B5C; padding: 48px 40px 40px; border-radius: 12px 12px 0 0; text-align: center; }
+  .header .brand { font-family: 'Outfit', sans-serif; font-size: 13px; letter-spacing: 0.45em; color: #EBEADF; opacity: 0.8; margin-bottom: 18px; }
+  .header h1 { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 400; color: #FFFFFF; line-height: 1.2; }
   .header h1 em { font-style: italic; }
-  .header .period {
-    margin-top: 14px;
-    font-family: 'Outfit', sans-serif;
-    font-size: 13px;
-    color: #EBEADF;
-    opacity: 0.75;
-    letter-spacing: 0.08em;
-  }
-
-  /* NOTICE BOX */
-  .notice {
-    background: #FFF8EE;
-    border-left: 3px solid #8E7B5C;
-    padding: 20px 24px;
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.7;
-  }
+  .header .period { margin-top: 14px; font-size: 13px; color: #EBEADF; opacity: 0.75; letter-spacing: 0.08em; }
+  .notice { background: #FFF8EE; border-left: 3px solid #8E7B5C; padding: 20px 24px; font-size: 14px; line-height: 1.7; }
   .notice strong { color: #8E7B5C; }
   .notice ul { margin-top: 10px; padding-left: 18px; }
   .notice li { margin-bottom: 6px; }
-
-  /* CAMPAIGN CARD */
-  .campaign {
-    background: #FFFFFF;
-    padding: 32px 36px;
-    border-bottom: 1px solid #EBEADF;
-  }
+  .campaign { background: #FFFFFF; padding: 32px 36px; border-bottom: 1px solid #EBEADF; }
   .campaign:last-of-type { border-bottom: none; border-radius: 0 0 12px 12px; }
-  .campaign-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  .campaign-num {
-    background: #8E7B5C;
-    color: #FFFFFF;
-    font-family: 'Outfit', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    padding: 6px 12px;
-    border-radius: 4px;
-    white-space: nowrap;
-    margin-top: 4px;
-  }
-  .campaign-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 1.2;
-    color: #1A1A1A;
-  }
+  .campaign-header { display: flex; align-items: flex-start; gap: 20px; margin-bottom: 20px; }
+  .campaign-num { background: #8E7B5C; color: #FFFFFF; font-size: 11px; font-weight: 700; letter-spacing: 0.18em; padding: 6px 12px; border-radius: 4px; white-space: nowrap; margin-top: 4px; }
+  .campaign-title { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 500; line-height: 1.2; color: #1A1A1A; }
   .campaign-title em { font-style: italic; color: #8E7B5C; }
-  .campaign-meta {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #EBEADF;
-  }
-  .meta-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 12px;
-    color: #666;
-    font-family: 'Outfit', sans-serif;
-  }
+  .campaign-meta { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #EBEADF; }
+  .meta-pill { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: #666; }
   .meta-pill strong { color: #1A1A1A; }
-
-  /* SUBJECT / PREHEADER */
-  .copy-block {
-    background: #EBEADF;
-    border-radius: 8px;
-    padding: 16px 20px;
-    margin-bottom: 20px;
-  }
-  .copy-block .copy-row {
-    display: flex;
-    gap: 12px;
-    align-items: baseline;
-    margin-bottom: 6px;
-  }
-  .copy-block .copy-row:last-child { margin-bottom: 0; }
-  .copy-label {
-    font-family: 'Outfit', sans-serif;
-    font-size: 10px;
-    letter-spacing: 0.18em;
-    font-weight: 700;
-    color: #8E7B5C;
-    text-transform: uppercase;
-    white-space: nowrap;
-    min-width: 80px;
-  }
-  .copy-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 17px;
-    color: #1A1A1A;
-    line-height: 1.4;
-  }
-
-  /* PRODUCTS TABLE */
-  .products-label {
-    font-family: 'Outfit', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    font-weight: 700;
-    color: #8E7B5C;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-  table.products {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 16px;
-    font-size: 14px;
-  }
-  table.products th {
-    font-family: 'Outfit', sans-serif;
-    font-size: 10px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #999;
-    padding: 6px 10px;
-    text-align: left;
-    border-bottom: 1px solid #EBEADF;
-  }
-  table.products td {
-    padding: 10px 10px;
-    border-bottom: 1px solid #F5F4EF;
-    vertical-align: top;
-  }
+  .copy-block { background: #EBEADF; border-radius: 8px; padding: 16px 20px; margin-bottom: 20px; }
+  .copy-row { display: flex; gap: 12px; align-items: baseline; margin-bottom: 6px; }
+  .copy-row:last-child { margin-bottom: 0; }
+  .copy-label { font-size: 10px; letter-spacing: 0.18em; font-weight: 700; color: #8E7B5C; text-transform: uppercase; white-space: nowrap; min-width: 80px; }
+  .copy-text { font-family: 'Cormorant Garamond', serif; font-size: 17px; color: #1A1A1A; line-height: 1.4; }
+  .products-label { font-size: 11px; letter-spacing: 0.18em; font-weight: 700; color: #8E7B5C; text-transform: uppercase; margin-bottom: 10px; }
+  table.products { width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 14px; }
+  table.products th { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #999; padding: 6px 10px; text-align: left; border-bottom: 1px solid #EBEADF; }
+  table.products td { padding: 10px 10px; border-bottom: 1px solid #F5F4EF; vertical-align: top; }
   table.products tr:last-child td { border-bottom: none; }
   table.products .prod-name { font-family: 'Cormorant Garamond', serif; font-size: 16px; }
   table.products .prod-color { color: #666; font-size: 13px; }
   table.products .prod-price { font-weight: 600; color: #1A1A1A; white-space: nowrap; }
-  table.products .sale-badge {
-    font-size: 10px;
-    background: #FFF3E0;
-    color: #E65100;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-  }
-
-  /* NOTES */
-  .note {
-    font-size: 13px;
-    color: #666;
-    font-family: 'Outfit', sans-serif;
-    line-height: 1.6;
-    margin-top: 8px;
-  }
+  .note { font-size: 13px; color: #666; line-height: 1.6; margin-top: 8px; }
   .note strong { color: #1A1A1A; }
-
-  /* SCHEDULE TABLE */
-  .schedule-wrap {
-    background: #FFFFFF;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 8px;
-  }
-  table.schedule {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px;
-  }
-  table.schedule th {
-    background: #8E7B5C;
-    color: #FFFFFF;
-    font-family: 'Outfit', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    padding: 12px 16px;
-    text-align: left;
-  }
-  table.schedule td {
-    padding: 14px 16px;
-    border-bottom: 1px solid #F5F4EF;
-    font-family: 'Outfit', sans-serif;
-  }
+  .schedule-wrap { background: #FFFFFF; border-radius: 12px; overflow: hidden; margin-bottom: 8px; }
+  table.schedule { width: 100%; border-collapse: collapse; font-size: 14px; }
+  table.schedule th { background: #8E7B5C; color: #FFFFFF; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; padding: 12px 16px; text-align: left; }
+  table.schedule td { padding: 14px 16px; border-bottom: 1px solid #F5F4EF; }
   table.schedule tr:last-child td { border-bottom: none; }
   table.schedule .date { font-weight: 600; color: #8E7B5C; white-space: nowrap; }
   table.schedule .audience { font-size: 12px; color: #999; }
-
-  /* FOOTER */
-  .footer {
-    text-align: center;
-    padding: 32px 20px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 15px;
-    font-style: italic;
-    color: #B6B7AE;
-  }
-
+  .footer { text-align: center; padding: 32px 20px; font-family: 'Cormorant Garamond', serif; font-size: 15px; font-style: italic; color: #B6B7AE; }
   @media (max-width: 600px) {
     .campaign { padding: 24px 20px; }
     .header { padding: 36px 24px 30px; }
     .header h1 { font-size: 28px; }
     .campaign-header { flex-direction: column; gap: 10px; }
-    table.products th:last-child, table.products td:last-child { display: none; }
   }
 </style>
 </head>
 <body>
 <div class="wrapper">
 
-  <!-- HEADER -->
   <div class="header">
     <div class="brand">L E G A &nbsp;·&nbsp; eLaiškai</div>
     <h1><em>Birželio</em> kampanijų planas</h1>
     <div class="period">C09 – C15 &nbsp;·&nbsp; 2026 birželis &nbsp;·&nbsp; 7 kampanijos</div>
   </div>
 
-  <!-- SCHEDULE OVERVIEW -->
   <div class="notice">
     <strong>Produktų atrankos principas (atnaujinta pagal Linos komentarus):</strong>
     <ul>
       <li>Visi produktai iš kategorijos <strong>„Rūbai"</strong> — pilna kaina, aktyvūs parduotuvėje</li>
-      <li>Max <strong>1 išpardavimo produktas</strong> per email'ą, tik jei vizualiai dera su tema</li>
-      <li><strong>Dryžuota</strong> medžiaga nenaudojama vasaros casual temose (tinka biurui/darbui)</li>
+      <li>Nėra išpardavimo produktų reguliariuose email'uose</li>
+      <li><strong>Dryžuota</strong> medžiaga nenaudojama vasaros casual temose</li>
       <li>Kiekvieno email'o produktai <strong>vizualiai ir stilistiškai dera</strong> tarpusavyje</li>
     </ul>
   </div>
 
-  <!-- OVERVIEW TABLE -->
   <div class="schedule-wrap">
     <table class="schedule">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Data</th>
-          <th>Tema</th>
-          <th>Auditorija</th>
-        </tr>
-      </thead>
+      <thead><tr><th>#</th><th>Data</th><th>Tema</th><th>Auditorija</th></tr></thead>
       <tbody>
-        <tr>
-          <td><strong>C09</strong></td>
-          <td class="date">Birž 9, Ant</td>
-          <td>Vasaros suknelės — natūralus linas</td>
-          <td class="audience">Aktyvūs 30d</td>
-        </tr>
-        <tr>
-          <td><strong>C10</strong></td>
-          <td class="date">Birž 11, Ket</td>
-          <td>Atostogų lino rinkiniai</td>
-          <td class="audience">Visi prenumeratoriai</td>
-        </tr>
-        <tr>
-          <td><strong>C11</strong></td>
-          <td class="date">Birž 16, Ant</td>
-          <td>Lino palaidinės vasarai</td>
-          <td class="audience">Aktyvūs 30d</td>
-        </tr>
-        <tr>
-          <td><strong>C12</strong></td>
-          <td class="date">Birž 18, Ket</td>
-          <td>Miego rūbai vasarą</td>
-          <td class="audience">Visi prenumeratoriai</td>
-        </tr>
-        <tr>
-          <td><strong>C13</strong></td>
-          <td class="date">Birž 23, Ant</td>
-          <td>Lino sijonai ir kelnės</td>
-          <td class="audience">Aktyvūs 30d</td>
-        </tr>
-        <tr>
-          <td><strong>C14</strong></td>
-          <td class="date">Birž 25, Ket</td>
-          <td>DANGUS kombinezonas</td>
-          <td class="audience">Visi prenumeratoriai</td>
-        </tr>
-        <tr>
-          <td><strong>C15</strong></td>
-          <td class="date">Birž 30, Ant</td>
-          <td>Liepos anonsas</td>
-          <td class="audience">Aktyvūs 30d</td>
-        </tr>
+        <tr><td><strong>C09</strong></td><td class="date">Birž 9, Ant</td><td>Vasaros suknelės — natūralus linas</td><td class="audience">Aktyvūs 30d</td></tr>
+        <tr><td><strong>C10</strong></td><td class="date">Birž 11, Ket</td><td>Atostogų lino rinkiniai</td><td class="audience">Visi prenumeratoriai</td></tr>
+        <tr><td><strong>C11</strong></td><td class="date">Birž 16, Ant</td><td>Lino palaidinės vasarai</td><td class="audience">Aktyvūs 30d</td></tr>
+        <tr><td><strong>C12</strong></td><td class="date">Birž 18, Ket</td><td>Tekančios saulės kolekcija</td><td class="audience">Visi prenumeratoriai</td></tr>
+        <tr><td><strong>C13</strong></td><td class="date">Birž 23, Ant</td><td>Lino sijonai ir kelnės</td><td class="audience">Aktyvūs 30d</td></tr>
+        <tr><td><strong>C14</strong></td><td class="date">Birž 25, Ket</td><td>DANGUS kombinezonas</td><td class="audience">Visi prenumeratoriai</td></tr>
+        <tr><td><strong>C15</strong></td><td class="date">Birž 30, Ant</td><td>Liepos anonsas</td><td class="audience">Aktyvūs 30d</td></tr>
       </tbody>
     </table>
   </div>
@@ -338,14 +103,8 @@
       <span class="meta-pill">👥 <strong>Aktyvūs 30d</strong></span>
     </div>
     <div class="copy-block">
-      <div class="copy-row">
-        <span class="copy-label">Subject</span>
-        <span class="copy-text">Ilgos lininės suknelės vasarai</span>
-      </div>
-      <div class="copy-row">
-        <span class="copy-label">Preheader</span>
-        <span class="copy-text">SMILGA, SVAJA, ŠVIESA ir VĖJA — lengvam Jūsų vasaros ritmui</span>
-      </div>
+      <div class="copy-row"><span class="copy-label">Subject</span><span class="copy-text">Ilgos lininės suknelės vasarai</span></div>
+      <div class="copy-row"><span class="copy-label">Preheader</span><span class="copy-text">SMILGA, SVAJA, ŠVIESA — lengvam Jūsų vasaros ritmui</span></div>
     </div>
     <div class="products-label">Produktai (visi pilna kaina)</div>
     <table class="products">
@@ -354,10 +113,9 @@
         <tr><td class="prod-name">Ilga suknelė „SMILGA"</td><td class="prod-color">smilgos</td><td class="prod-price">99€</td></tr>
         <tr><td class="prod-name">Ilga suknelė „SVAJA"</td><td class="prod-color">alyvuogių žalia</td><td class="prod-price">129€</td></tr>
         <tr><td class="prod-name">Ilga suknelė „ŠVIESA"</td><td class="prod-color">dangaus melsva</td><td class="prod-price">129€</td></tr>
-        <tr><td class="prod-name">Ilga suknelė „ŠVIESA"</td><td class="prod-color">Maroko raudona</td><td class="prod-price">129€</td></tr>
       </tbody>
     </table>
-    <p class="note">Hero: reali lega.lt fotosesijų nuotrauka su linine suknele.</p>
+    <p class="note">Parduotuvėje 3 skirtingi ilgos suknelės modeliai pilna kaina — po vieną kiekvieno.</p>
   </div>
 
   <!-- C10 -->
@@ -371,16 +129,10 @@
       <span class="meta-pill">👥 <strong>Visi prenumeratoriai</strong></span>
     </div>
     <div class="copy-block">
-      <div class="copy-row">
-        <span class="copy-label">Subject</span>
-        <span class="copy-text">Lino deriniai kelionei</span>
-      </div>
-      <div class="copy-row">
-        <span class="copy-label">Preheader</span>
-        <span class="copy-text">ŠORTAI RASA, marškiniai KRANTAS ir lengvos palaidinės atostogoms</span>
-      </div>
+      <div class="copy-row"><span class="copy-label">Subject</span><span class="copy-text">Lino deriniai kelionei</span></div>
+      <div class="copy-row"><span class="copy-label">Preheader</span><span class="copy-text">ŠORTAI RASA, marškiniai KRANTAS ir lengvos palaidinės atostogoms</span></div>
     </div>
-    <div class="products-label">Produktai</div>
+    <div class="products-label">Produktai (visi pilna kaina)</div>
     <table class="products">
       <thead><tr><th>Pavadinimas</th><th>Spalva</th><th>Kaina</th></tr></thead>
       <tbody>
@@ -403,14 +155,8 @@
       <span class="meta-pill">👥 <strong>Aktyvūs 30d</strong></span>
     </div>
     <div class="copy-block">
-      <div class="copy-row">
-        <span class="copy-label">Subject</span>
-        <span class="copy-text">Lininės palaidinės vasarai</span>
-      </div>
-      <div class="copy-row">
-        <span class="copy-label">Preheader</span>
-        <span class="copy-text">SKRAISTĖ, BRIZA, VĖSA ir AUŠRA — kai norisi lengvumo prie odos</span>
-      </div>
+      <div class="copy-row"><span class="copy-label">Subject</span><span class="copy-text">Lininės palaidinės vasarai</span></div>
+      <div class="copy-row"><span class="copy-label">Preheader</span><span class="copy-text">SKRAISTĖ, BRIZA, VĖSA — kai norisi lengvumo prie odos</span></div>
     </div>
     <div class="products-label">Produktai (visi pilna kaina)</div>
     <table class="products">
@@ -435,14 +181,8 @@
       <span class="meta-pill">👥 <strong>Visi prenumeratoriai</strong></span>
     </div>
     <div class="copy-block">
-      <div class="copy-row">
-        <span class="copy-label">Subject</span>
-        <span class="copy-text">Tekančios saulės kolekcija</span>
-      </div>
-      <div class="copy-row">
-        <span class="copy-label">Preheader</span>
-        <span class="copy-text">Lengvi naktinukai, pižamos ir chalatai vasaros rytams.</span>
-      </div>
+      <div class="copy-row"><span class="copy-label">Subject</span><span class="copy-text">Tekančios saulės kolekcija</span></div>
+      <div class="copy-row"><span class="copy-label">Preheader</span><span class="copy-text">Lengvi naktinukai, pižamos ir chalatai vasaros rytams.</span></div>
     </div>
     <div class="products-label">Produktai (visi pilna kaina · 34 vnt kolekcijoje)</div>
     <table class="products">
@@ -468,14 +208,8 @@
       <span class="meta-pill">👥 <strong>Aktyvūs 30d</strong></span>
     </div>
     <div class="copy-block">
-      <div class="copy-row">
-        <span class="copy-label">Subject</span>
-        <span class="copy-text">Lino sijonai ir kelnės</span>
-      </div>
-      <div class="copy-row">
-        <span class="copy-label">Preheader</span>
-        <span class="copy-text">SMĖLIS, ATSPINDYS ir AURA — vasaros siluetai, kuriuos lengva derinti</span>
-      </div>
+      <div class="copy-row"><span class="copy-label">Subject</span><span class="copy-text">Lino sijonai ir kelnės</span></div>
+      <div class="copy-row"><span class="copy-label">Preheader</span><span class="copy-text">SMĖLIS, ATSPINDYS ir AURA — vasaros siluetai, kuriuos lengva derinti</span></div>
     </div>
     <div class="products-label">Produktai (visi pilna kaina)</div>
     <table class="products">
@@ -500,14 +234,8 @@
       <span class="meta-pill">👥 <strong>Visi prenumeratoriai</strong></span>
     </div>
     <div class="copy-block">
-      <div class="copy-row">
-        <span class="copy-label">Subject</span>
-        <span class="copy-text">DANGUS — vasaros kombinezonas</span>
-      </div>
-      <div class="copy-row">
-        <span class="copy-label">Preheader</span>
-        <span class="copy-text">Vienas grakštus drabužis visam įvaizdžiui — lengvai, be pastangų</span>
-      </div>
+      <div class="copy-row"><span class="copy-label">Subject</span><span class="copy-text">DANGUS — vasaros kombinezonas</span></div>
+      <div class="copy-row"><span class="copy-label">Preheader</span><span class="copy-text">Vienas grakštus drabužis visam įvaizdžiui — lengvai, be pastangų</span></div>
     </div>
     <div class="products-label">Produktai (visi pilna kaina)</div>
     <table class="products">
@@ -532,21 +260,13 @@
       <span class="meta-pill">👥 <strong>Aktyvūs 30d</strong></span>
     </div>
     <div class="copy-block">
-      <div class="copy-row">
-        <span class="copy-label">Subject</span>
-        <span class="copy-text">Liepos kolekcijos nuotaika</span>
-      </div>
-      <div class="copy-row">
-        <span class="copy-label">Preheader</span>
-        <span class="copy-text">Ramus žvilgsnis į tai, kas LEGA laukia kitą mėnesį</span>
-      </div>
+      <div class="copy-row"><span class="copy-label">Subject</span><span class="copy-text">Liepos kolekcijos nuotaika</span></div>
+      <div class="copy-row"><span class="copy-label">Preheader</span><span class="copy-text">Ramus žvilgsnis į tai, kas LEGA laukia kitą mėnesį</span></div>
     </div>
-    <p class="note" style="margin-top:0;"><strong>Turinys:</strong> Liepos naujienos / coming soon — Lina pasidalina info. Jei dar nežinoma, stilistinis „laukiame kartu" email'as su geriausiais birželio modeliais.</p>
+    <p class="note" style="margin-top:0;"><strong>Turinys:</strong> Liepos naujienos / coming soon — Lina pasidalina info apie naujus modelius.</p>
   </div>
 
-  <div class="footer">
-    „<em>Laimės</em> jausmas" &nbsp;·&nbsp; LEGA &nbsp;·&nbsp; planas parengtas 2026-06-08
-  </div>
+  <div class="footer">„<em>Laimės</em> jausmas" &nbsp;·&nbsp; LEGA &nbsp;·&nbsp; planas parengtas 2026-06-08</div>
 
 </div>
 </body>
