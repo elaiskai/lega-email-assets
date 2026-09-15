@@ -1,6 +1,6 @@
-# LEGA: Populiariausias derinys rudeniui
+# LEGA: Suknelė visai dienai ir vakarui
 
-Numatyta siuntimo diena: 2026-09-15. Laiškas neišsiųstas ir siuntimas nesuplanuotas.
+Numatyta siuntimo diena: 2026-09-17. Laiškas neišsiųstas ir siuntimas nesuplanuotas.
 
 ## Failai
 
@@ -12,11 +12,11 @@ Numatyta siuntimo diena: 2026-09-15. Laiškas neišsiųstas ir siuntimas nesupla
 * assets: originalios LEGA produktų nuotraukos ir logotipas.
 * asset-sources.json ir product-sources.json: oficialių šaltinių duomenys.
 
-Tema: Populiariausias derinys rudeniui
+Tema: Suknelė visai dienai ir vakarui
 
 Prieš siuntimą pritaikyti {{ unsubscribe_url }} atsisakymo nuorodą pagal siuntimo platformą. Nuotraukos negeneruotos ir neperdažytos. Galutinis maketas su ryškiais CTA, be brūkšnių vartotojui skirtuose tekstuose.
 
-GitHub aplankas: https://github.com/elaiskai/lega-email-assets/tree/main/campaigns/c39-autumn-2026-velvet-trio
+GitHub aplankas: https://github.com/elaiskai/lega-email-assets/tree/main/campaigns/c40-autumn-2026-sekvoja
 
 ## Patikra
 

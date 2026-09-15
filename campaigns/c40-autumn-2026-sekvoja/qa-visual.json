@@ -1,0 +1,12 @@
+{
+  "htmlSha": "95fa3d129c7af6f3fdb2e45ffefbcfe47513ba820b20bcfc3140671d7fc1f8d3",
+  "desktopApproved": true,
+  "mobileApproved": true,
+  "strippedCssApproved": true,
+  "reviewDate": "2026-09-15",
+  "viewports": [600, 320, 390, 430],
+  "method": "Visually inspected fresh screenshots in sequential contact sheets for all eight viewport and style variants.",
+  "notes": "Full dress is visible in hero. Photo pairs and construction details stack on mobile. Each evening photo retains its matching CTA. Readable text, intact names, clear buttons and proportional photos in normal and stripped CSS variants.",
+  "realEmailClientVerified": false,
+  "beforeSending": "Send and inspect a fresh Omnisend test email on a phone. Browser previews do not certify Gmail rendering."
+}

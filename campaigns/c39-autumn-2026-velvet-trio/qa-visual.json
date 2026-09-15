@@ -1,0 +1,12 @@
+{
+  "htmlSha": "693862cb40d4266d6fe77f3ed291ab6f7d950140f1da400c34f9c5cc6d5c755c",
+  "desktopApproved": true,
+  "mobileApproved": true,
+  "strippedCssApproved": true,
+  "reviewDate": "2026-09-15",
+  "viewports": [600, 320, 390, 430],
+  "method": "Visually inspected fresh screenshots in sequential contact sheets for all eight viewport and style variants.",
+  "notes": "Photo and text columns stack on mobile. Product names intact, body text readable, photos proportional, buttons associated with products and fully visible. Side by side shirt comparison remains legible at 320 px.",
+  "realEmailClientVerified": false,
+  "beforeSending": "Send and inspect a fresh Omnisend test email on a phone. Browser previews do not certify Gmail rendering."
+}

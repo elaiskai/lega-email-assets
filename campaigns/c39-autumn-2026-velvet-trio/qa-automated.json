@@ -1,0 +1,311 @@
+{
+  "htmlSha": "693862cb40d4266d6fe77f3ed291ab6f7d950140f1da400c34f9c5cc6d5c755c",
+  "passed": true,
+  "desktop": {
+    "x": 150,
+    "y": 0,
+    "width": 600,
+    "height": 4173.828125
+  },
+  "results": [
+    {
+      "stripped": false,
+      "width": 600,
+      "scroll": 600,
+      "buttons": [
+        {
+          "height": 58,
+          "width": 360
+        },
+        {
+          "height": 54,
+          "width": 285
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 58,
+          "width": 360
+        }
+      ],
+      "problems": []
+    },
+    {
+      "stripped": true,
+      "width": 600,
+      "scroll": 600,
+      "buttons": [
+        {
+          "height": 58,
+          "width": 360
+        },
+        {
+          "height": 54,
+          "width": 285
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 58,
+          "width": 360
+        }
+      ],
+      "problems": []
+    },
+    {
+      "stripped": false,
+      "width": 320,
+      "scroll": 320,
+      "buttons": [
+        {
+          "height": 58,
+          "width": 272
+        },
+        {
+          "height": 54,
+          "width": 256
+        },
+        {
+          "height": 54,
+          "width": 272
+        },
+        {
+          "height": 54,
+          "width": 272
+        },
+        {
+          "height": 54,
+          "width": 272
+        },
+        {
+          "height": 58,
+          "width": 272
+        }
+      ],
+      "problems": []
+    },
+    {
+      "stripped": true,
+      "width": 320,
+      "scroll": 320,
+      "buttons": [
+        {
+          "height": 58,
+          "width": 272
+        },
+        {
+          "height": 54,
+          "width": 256
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 58,
+          "width": 272
+        }
+      ],
+      "problems": []
+    },
+    {
+      "stripped": false,
+      "width": 390,
+      "scroll": 390,
+      "buttons": [
+        {
+          "height": 58,
+          "width": 342
+        },
+        {
+          "height": 54,
+          "width": 285
+        },
+        {
+          "height": 54,
+          "width": 285
+        },
+        {
+          "height": 54,
+          "width": 285
+        },
+        {
+          "height": 54,
+          "width": 285
+        },
+        {
+          "height": 58,
+          "width": 342
+        }
+      ],
+      "problems": []
+    },
+    {
+      "stripped": true,
+      "width": 390,
+      "scroll": 390,
+      "buttons": [
+        {
+          "height": 58,
+          "width": 342
+        },
+        {
+          "height": 54,
+          "width": 285
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 58,
+          "width": 342
+        }
+      ],
+      "problems": []
+    },
+    {
+      "stripped": false,
+      "width": 430,
+      "scroll": 430,
+      "buttons": [
+        {
+          "height": 58,
+          "width": 360
+        },
+        {
+          "height": 54,
+          "width": 285
+        },
+        {
+          "height": 54,
+          "width": 285
+        },
+        {
+          "height": 54,
+          "width": 285
+        },
+        {
+          "height": 54,
+          "width": 285
+        },
+        {
+          "height": 58,
+          "width": 360
+        }
+      ],
+      "problems": []
+    },
+    {
+      "stripped": true,
+      "width": 430,
+      "scroll": 430,
+      "buttons": [
+        {
+          "height": 58,
+          "width": 360
+        },
+        {
+          "height": 54,
+          "width": 285
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 54,
+          "width": 252
+        },
+        {
+          "height": 58,
+          "width": 360
+        }
+      ],
+      "problems": []
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "desktop-preview.jpg",
+      "sha256": "408694278f2b2eafb8e25545c45b0c2f4d2eb75849ad8c588ea680a4035c860d"
+    },
+    {
+      "file": "preview-full.png",
+      "sha256": "a2ab7b6235914f83c7dbd1a6f515bab75790587af99c70e969a89fa78e74add1"
+    },
+    {
+      "file": "preview-desktop.png",
+      "sha256": "f7a1e48268c4833565426a2e2ada827483f96e1657b96df6dae3ef332c77a33e"
+    },
+    {
+      "file": "preview-desktop-stripped.png",
+      "sha256": "c062798f6b9439b0320cd94d693c34197faf158eaaf6a5a142380f967daf96a3"
+    },
+    {
+      "file": "preview-mobile-320.png",
+      "sha256": "b66dcf25f446821df77960ebf68cd5584c99c40197ea6dfe5b5c0a50c85bc018"
+    },
+    {
+      "file": "preview-mobile-320-stripped.png",
+      "sha256": "db82658f4fdcaca1955b8a1c17774215476a4da4271eb049420ce679bd354566"
+    },
+    {
+      "file": "preview-mobile.png",
+      "sha256": "3bb92e67b7f7a4efdc1fa21a74b79f57395fb006cb8a5d601ca96781f45450b3"
+    },
+    {
+      "file": "preview-mobile-390-stripped.png",
+      "sha256": "85946828ce27f690dd1895a883473f8d3dff003ab57867e5b790186eb88b2416"
+    },
+    {
+      "file": "preview-mobile-430.png",
+      "sha256": "4c3c6b40c09eca156d2036aa150a6a904f1b1ffd9f8fbf893dfdfdb6121c7ae1"
+    },
+    {
+      "file": "preview-mobile-430-stripped.png",
+      "sha256": "65478275000670692954d3c0767e0aca02b930e359ec2af25f242c50e564bdb3"
+    }
+  ],
+  "realEmailClientVerified": false
+}

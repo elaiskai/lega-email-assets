@@ -1,0 +1,7 @@
+{
+  "localHtmlSha256": "693862cb40d4266d6fe77f3ed291ab6f7d950140f1da400c34f9c5cc6d5c755c",
+  "hostedHtmlSha256": "300fac07faae3f5599305373d5820d190a9585986113526de92f5eb631e03b8c",
+  "transformation": "Only relative asset src paths replaced with this campaign GitHub raw URLs. Layout and copy unchanged.",
+  "browserQaPassed": true,
+  "realEmailClientVerified": false
+}
