@@ -1,0 +1,82 @@
+{
+  "htmlSha": "93810877555729094f1c1fce3f69f3b999a0ae5831444e6fafea4d839c994bfe",
+  "hostedHtmlSha": "87c8861aa5a6ec29ad7564a0ebef1306be606aebba38374bd660de8922c0ae15",
+  "passed": true,
+  "results": [
+    {
+      "width": 600,
+      "stripped": false,
+      "problems": []
+    },
+    {
+      "width": 600,
+      "stripped": true,
+      "problems": []
+    },
+    {
+      "width": 320,
+      "stripped": false,
+      "problems": []
+    },
+    {
+      "width": 320,
+      "stripped": true,
+      "problems": []
+    },
+    {
+      "width": 390,
+      "stripped": false,
+      "problems": []
+    },
+    {
+      "width": 390,
+      "stripped": true,
+      "problems": []
+    },
+    {
+      "width": 430,
+      "stripped": false,
+      "problems": []
+    },
+    {
+      "width": 430,
+      "stripped": true,
+      "problems": []
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "preview-600.png",
+      "sha256": "724fd9bab0369619bb5a544a2213ab36731c50740cd8003306c183cd95f8926f"
+    },
+    {
+      "file": "preview-600-stripped.png",
+      "sha256": "12256d8e5157a40ed7c24c5aecc6c282884b0c05e1f9e0a63cb639981e2152f0"
+    },
+    {
+      "file": "preview-320.png",
+      "sha256": "873e769fd3a6848e03b370adb01f250548e991a2eb168b2f8fe3241fd25f3479"
+    },
+    {
+      "file": "preview-320-stripped.png",
+      "sha256": "bbcf0bcae2f0ce7fd073dc874f03c8a36549a9309531e6a4ad683a1ffc0b0913"
+    },
+    {
+      "file": "preview-390.png",
+      "sha256": "3b3ac79ab03ec5590e2c63e5e72abdd3fd9251292b0c246eaee715b7dd46b13d"
+    },
+    {
+      "file": "preview-390-stripped.png",
+      "sha256": "da517ba15317ddadd54d8010f026a74362a2931f2cda1b5b7db3c86275fe4dc1"
+    },
+    {
+      "file": "preview-430.png",
+      "sha256": "a958214af24643236181915ed16661584956968934701ca180a27ef3307f7add"
+    },
+    {
+      "file": "preview-430-stripped.png",
+      "sha256": "7687e962508d82e88fe34b6344869adb2b66ece89c099ed60db3ebed98b72104"
+    }
+  ],
+  "realEmailClientVerified": false
+}

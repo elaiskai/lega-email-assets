@@ -1,0 +1,13 @@
+{
+  "reviewDate": "2026-09-28",
+  "localHtmlSha256": "93810877555729094f1c1fce3f69f3b999a0ae5831444e6fafea4d839c994bfe",
+  "hostedHtmlSha256": "87c8861aa5a6ec29ad7564a0ebef1306be606aebba38374bd660de8922c0ae15",
+  "viewports": [600, 320, 390, 430],
+  "desktopApproved": true,
+  "mobileApproved": true,
+  "strippedCssApproved": true,
+  "reviewMethod": "Visual inspection of fresh screenshot contact sheets at every viewport, both normal and with head styles and font links removed.",
+  "checks": ["Readable text widths", "Intact product names", "Image before associated copy and CTA on mobile", "Natural photo proportions", "Aligned spacing", "No excessive empty mobile columns", "Clear CTA buttons at least 44px high"],
+  "realEmailClientVerified": false,
+  "deliveryNote": "Send a fresh Omnisend test to a phone before sending the campaign. Browser previews are not verification of Gmail or Omnisend delivery."
+}
