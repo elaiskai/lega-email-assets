@@ -1,0 +1,13 @@
+{
+  "reviewedAt": "2026-09-30",
+  "htmlSha256": "2954b188168b433ec4a0077418ae32deb587717a06ec260aed7b10da3a136a17",
+  "localHtmlSha256": "3a084f5ca51c7cfec113acc0a5b5b56d29f74638b3654346eba2f7b81fe344d7",
+  "renderedFile": "newsletter-hosted.html",
+  "widths": [600, 320, 390, 430],
+  "normalAndStrippedHeadReviewed": true,
+  "desktopApproved": true,
+  "mobileApproved": true,
+  "observations": "All eight fresh full screenshots visually inspected as sequential contact sheets after optimization. Desktop image and copy remain aligned in two columns. Mobile detail photos capped at 300px wide with natural proportions and no cropping, headings reduced, copy spans the available width, clear associated buttons at least 54px high. Hero columns aligned and product names intact. Head styles and font links removed variant also readable and naturally stacked. Outlook conditional structure updated but actual Outlook rendering not tested.",
+  "realEmailClientVerified": false,
+  "beforeSending": "Request a fresh Omnisend test on a phone and verify unsubscribe rendering. Browser QA is not Gmail or Omnisend delivery verification."
+}

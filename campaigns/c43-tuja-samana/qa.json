@@ -1,0 +1,353 @@
+{
+  "htmlFile": "newsletter-hosted.html",
+  "htmlSha256": "2954b188168b433ec4a0077418ae32deb587717a06ec260aed7b10da3a136a17",
+  "assetsMode": "Public C43 URLs intercepted with exact local assets before publishing",
+  "results": [
+    {
+      "width": 600,
+      "stripped": false,
+      "checks": {
+        "overflow": false,
+        "brokenImages": [],
+        "shortButtons": [],
+        "dashes": false,
+        "columns": [
+          {
+            "x": 0,
+            "y": 994.796875,
+            "width": 300,
+            "height": 449
+          },
+          {
+            "x": 300,
+            "y": 1063.671875,
+            "width": 300,
+            "height": 311.25
+          },
+          {
+            "x": 300,
+            "y": 1751.46875,
+            "width": 300,
+            "height": 449.5
+          },
+          {
+            "x": 0,
+            "y": 1794.75,
+            "width": 300,
+            "height": 362.9375
+          }
+        ]
+      },
+      "layout": {
+        "errors": [],
+        "height": 2805,
+        "htmlBytes": 17696
+      },
+      "passed": true,
+      "screenshotSha256": "dcba597a7824e81f3b9725c9c2d6c67fac62e5757061370bae3e0a5adf9bf9ce"
+    },
+    {
+      "width": 600,
+      "stripped": true,
+      "checks": {
+        "overflow": false,
+        "brokenImages": [],
+        "shortButtons": [],
+        "dashes": false,
+        "columns": [
+          {
+            "x": 0,
+            "y": 994.796875,
+            "width": 300,
+            "height": 449
+          },
+          {
+            "x": 300,
+            "y": 1063.671875,
+            "width": 300,
+            "height": 311.25
+          },
+          {
+            "x": 300,
+            "y": 1751.46875,
+            "width": 300,
+            "height": 449.5
+          },
+          {
+            "x": 0,
+            "y": 1794.75,
+            "width": 300,
+            "height": 362.9375
+          }
+        ]
+      },
+      "layout": {
+        "errors": [],
+        "height": 2805,
+        "htmlBytes": 16804
+      },
+      "passed": true,
+      "screenshotSha256": "dd16fac9c896c5afc715c13520a737144523f2e452b03844d752ffc54149dae2"
+    },
+    {
+      "width": 320,
+      "stripped": false,
+      "checks": {
+        "overflow": false,
+        "brokenImages": [],
+        "shortButtons": [],
+        "dashes": false,
+        "columns": [
+          {
+            "x": 10,
+            "y": 816.859375,
+            "width": 300,
+            "height": 449
+          },
+          {
+            "x": 0,
+            "y": 1265.859375,
+            "width": 320,
+            "height": 292.3125
+          },
+          {
+            "x": 10,
+            "y": 1936.5625,
+            "width": 300,
+            "height": 449.5
+          },
+          {
+            "x": 0,
+            "y": 2386.0625,
+            "width": 320,
+            "height": 320.3125
+          }
+        ]
+      },
+      "layout": {
+        "errors": [],
+        "height": 3421,
+        "htmlBytes": 17696
+      },
+      "passed": true,
+      "screenshotSha256": "4c68dbd3a86daecf1ffb71145a4349d9aa72de26faea2bab236f5a82cd998e86"
+    },
+    {
+      "width": 320,
+      "stripped": true,
+      "checks": {
+        "overflow": false,
+        "brokenImages": [],
+        "shortButtons": [],
+        "dashes": false,
+        "columns": [
+          {
+            "x": 10,
+            "y": 869.59375,
+            "width": 300,
+            "height": 449
+          },
+          {
+            "x": 10,
+            "y": 1318.59375,
+            "width": 300,
+            "height": 311.25
+          },
+          {
+            "x": 10,
+            "y": 2015.515625,
+            "width": 300,
+            "height": 449.5
+          },
+          {
+            "x": 10,
+            "y": 2465.015625,
+            "width": 300,
+            "height": 362.9375
+          }
+        ]
+      },
+      "layout": {
+        "errors": [],
+        "height": 3562,
+        "htmlBytes": 16804
+      },
+      "passed": true,
+      "screenshotSha256": "a19edc5c96b421c9155582281619e4c38ad404fac43968a420f649f1a1302cd5"
+    },
+    {
+      "width": 390,
+      "stripped": false,
+      "checks": {
+        "overflow": false,
+        "brokenImages": [],
+        "shortButtons": [],
+        "dashes": false,
+        "columns": [
+          {
+            "x": 45,
+            "y": 853.59375,
+            "width": 300,
+            "height": 449
+          },
+          {
+            "x": 0,
+            "y": 1302.59375,
+            "width": 390,
+            "height": 296.9375
+          },
+          {
+            "x": 45,
+            "y": 1951.921875,
+            "width": 300,
+            "height": 449.5
+          },
+          {
+            "x": 0,
+            "y": 2401.421875,
+            "width": 390,
+            "height": 324.9375
+          }
+        ]
+      },
+      "layout": {
+        "errors": [],
+        "height": 3361,
+        "htmlBytes": 17696
+      },
+      "passed": true,
+      "screenshotSha256": "2d77a7a4de027afbe55b65c72f76b9bdc9277df9a9f7be374f943b82946d6c80"
+    },
+    {
+      "width": 390,
+      "stripped": true,
+      "checks": {
+        "overflow": false,
+        "brokenImages": [],
+        "shortButtons": [],
+        "dashes": false,
+        "columns": [
+          {
+            "x": 45,
+            "y": 907.0625,
+            "width": 300,
+            "height": 449
+          },
+          {
+            "x": 45,
+            "y": 1356.0625,
+            "width": 300,
+            "height": 311.25
+          },
+          {
+            "x": 45,
+            "y": 2026.984375,
+            "width": 300,
+            "height": 449.5
+          },
+          {
+            "x": 45,
+            "y": 2476.484375,
+            "width": 300,
+            "height": 362.9375
+          }
+        ]
+      },
+      "layout": {
+        "errors": [],
+        "height": 3470,
+        "htmlBytes": 16804
+      },
+      "passed": true,
+      "screenshotSha256": "ab6e160425f8a730396946ddc0a7b81e63510783a503890f29b32c48131ca3ca"
+    },
+    {
+      "width": 430,
+      "stripped": false,
+      "checks": {
+        "overflow": false,
+        "brokenImages": [],
+        "shortButtons": [],
+        "dashes": false,
+        "columns": [
+          {
+            "x": 65,
+            "y": 845.96875,
+            "width": 300,
+            "height": 449
+          },
+          {
+            "x": 0,
+            "y": 1294.96875,
+            "width": 430,
+            "height": 296.9375
+          },
+          {
+            "x": 65,
+            "y": 1918.296875,
+            "width": 300,
+            "height": 449.5
+          },
+          {
+            "x": 0,
+            "y": 2367.796875,
+            "width": 430,
+            "height": 324.9375
+          }
+        ]
+      },
+      "layout": {
+        "errors": [],
+        "height": 3328,
+        "htmlBytes": 17696
+      },
+      "passed": true,
+      "screenshotSha256": "85bca00f9e94ce4982e0f9760b6ea2bc63d99c1ef1b97a117c9b8d4436898905"
+    },
+    {
+      "width": 430,
+      "stripped": true,
+      "checks": {
+        "overflow": false,
+        "brokenImages": [],
+        "shortButtons": [],
+        "dashes": false,
+        "columns": [
+          {
+            "x": 65,
+            "y": 911.046875,
+            "width": 300,
+            "height": 449
+          },
+          {
+            "x": 65,
+            "y": 1360.046875,
+            "width": 300,
+            "height": 311.25
+          },
+          {
+            "x": 65,
+            "y": 2004.96875,
+            "width": 300,
+            "height": 449.5
+          },
+          {
+            "x": 65,
+            "y": 2454.46875,
+            "width": 300,
+            "height": 362.9375
+          }
+        ]
+      },
+      "layout": {
+        "errors": [],
+        "height": 3447,
+        "htmlBytes": 16804
+      },
+      "passed": true,
+      "screenshotSha256": "921677c28538ea17529e193bf334b9f2e98e8cb6ace88e96f98b660c310a3b35"
+    }
+  ],
+  "realEmailClientVerified": false,
+  "visualReview": "See qa-visual.json"
+}
