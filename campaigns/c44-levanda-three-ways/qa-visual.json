@@ -1,11 +1,11 @@
 {
   "reviewedAt": "2026-10-05",
-  "htmlSha256": "52bc4b76a33903c26bcc9bf7130e6538d8365fa6cff17031510028b8336d1a35",
+  "htmlSha256": "062054200699baa621557ade1ea9d07ca02cf954862d4d8dcb5ff8fd880e36f1",
   "viewports": [600, 320, 390, 430],
   "modes": ["normal", "head styles and font links removed"],
-  "visualReview": "V3 passed after inspecting all eight fresh contact sheets from the delivered HTML. Exact Violeta review and attribution added before closing CTA, readable on desktop and mobile, with punctuation kept attached. Asymmetrical single photo hero stacks on mobile including stripped styles fallback. Natural photo proportions, full silhouettes, readable copy, associated photo and CTA, aligned desktop headings, intact product names and clear clickable buttons.",
-  "automatedChecks": "All eight variants passed. See qa.json.",
+  "visualReview": "Mobile repair passed after inspecting all eleven fresh contact sheets from the exact delivered HTML. Includes desktop 600, mobile 320/390/430, head CSS/font links removed, and three mobile stripped variants with 16px mail-client gutters. Hero inline baseline is full width with a two-line 30px heading and compact 175px text panel. Desktop split is progressive enhancement. Photo proportions, readable copy, intact product names, image/CTA order, spacing and buttons checked. Live GitHub image URLs loaded without interception.",
+  "automatedChecks": "All eleven variants passed, including hero title <=70px, hero panel <=205px, photo top <=340px on mobile, no overflow, natural image ratio and CTA targets. See qa.json.",
   "realEmailClientVerified": false,
-  "publicationStatus": "Approved for GitHub asset publishing after fresh review of all eight final HTML previews. Hosted image URLs mapped to identical local asset bytes during prepublication rendering. No email sending authorized.",
+  "publicationStatus": "Mobile fix ready to replace c44 files after browser QA. User supplied Gmail screenshot inspected: narrow fallback hero caused excessive height. Fresh Omnisend delivery test requested; repair not yet verified in actual Gmail. No email sending authorized.",
   "remainingIntegration": ["Confirm unsubscribe token", "Fresh Omnisend test including phone", "Recheck live size stock before send"]
 }

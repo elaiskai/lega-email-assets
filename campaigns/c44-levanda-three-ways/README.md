@@ -8,6 +8,10 @@ Importuoti `newsletter.html`. Nuotraukų adresai absoliutūs ir veda į šio apl
 
 Tema: Vieni marškiniai, keli būdai dėvėti
 
+## Telefono pataisymas, 2026 m. spalio 5 d.
+
+Pagal pateiktą Gmail testo ekrano kopiją pataisytas per siauras hero tekstas. Kompaktiškas pilno pločio tekstas dabar yra bazinis inline variantas, todėl jam nereikia media taisyklių. Desktop dviejų stulpelių hero taikomas tik per desktop stilius. Patikrinta 11 šviežių variantų, įskaitant pašalintus head stilius ir papildomas 16 px paraštes telefone. Nuotraukos patikrintos naudojant gyvus GitHub adresus. Ankstesnis Omnisend importas automatiškai neatsinaujina: reikia iš naujo importuoti newsletter.html ir atsiųsti naują tikro telefono testo ekrano kopiją. Gmail rezultatas dar nepatvirtintas.
+
 Trys realiais originaliais kadrais pagrįsti variantai: laisvai su KAVA, su dirželiu ir KAVA, su dirželiu ir VERBENA. Atsegtų marškinių kadro produkto galerijoje nėra, todėl šios anksčiau pasiūlytos idėjos atsisakyta. Modeliai ir apranga negeneruoti, nuotraukos tik sumažintos išlaikant originalų santykį.
 
 ## Šaltiniai ir patikra
