@@ -1,0 +1,46 @@
+[
+  {
+    "file": "lega-logo-white.png",
+    "sha256": "522d3ba6f2e2872920cf2168ea124071179d6e952fdbe28aa1165e59871a68bc"
+  },
+  {
+    "file": "hero-editorial-v2.jpg",
+    "sha256": "936a0671c6cd8f7b1f956d67cfe5c08ed69fd1b002cea3efebe018da777e5ef0"
+  },
+  {
+    "file": "taupe-skirt.jpg",
+    "sha256": "1732f4d31ea302c1e363f4aaf15dc96dc410fad781bfd7dec8a618191469e239"
+  },
+  {
+    "file": "taupe-dress.jpg",
+    "sha256": "fbbf7bd6799d232b0d9caf8456acc949b7765ed88bc7bd90e8ac44e275e53f1e"
+  },
+  {
+    "file": "taupe-long.jpg",
+    "sha256": "e963420e3da717e3d5334a0b565ebfe6bff0bef277b0da334762f28575dcd735"
+  },
+  {
+    "file": "blue-dress.jpg",
+    "sha256": "01fa74c7dd8e038070c6e42482cd3839e9bbd6a6fb1ce0a23a35eb820b2f69a5"
+  },
+  {
+    "file": "blue-skirt.jpg",
+    "sha256": "634040bcde69cefcc3f8fd0039ceae1b77b2407d84ebf7175e1543b7a19572be"
+  },
+  {
+    "file": "blue-long.jpg",
+    "sha256": "032a4dd3dd39648cefb7744fc8352d45659ad739fee1f9305653d9fd24cae6fe"
+  },
+  {
+    "file": "green-trousers.jpg",
+    "sha256": "14b65c90454ba0ca459816c6610b78196b95e8f3366ae5b09abc2802d990291a"
+  },
+  {
+    "file": "green-long.jpg",
+    "sha256": "31a59c5f961e1fac8fed0ed6214cb04c21efa7df97c98f1a2d96f4b41acaf530"
+  },
+  {
+    "file": "green-dress.jpg",
+    "sha256": "f02379f2947ab7d752090e76b8e8c693eaac37bd28c320ebf806b15dde25c68b"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "collection": "https://lega.lt/collections/dzemperinis-trikotazas-su-pukeliu",
+  "products": {
+    "taupe-skirt": "sijonas-spindulys-mokos-ruda",
+    "taupe-dress": "trumpa-suknele-astra-mokos-ruda",
+    "taupe-long": "ilga-suknele-aurora-mokos-ruda",
+    "blue-dress": "trumpa-suknele-astra-safyro-melyna",
+    "blue-skirt": "sijonas-spindulys-safyro-melyna",
+    "blue-long": "ilga-suknele-aurora-safyro-melyna",
+    "green-trousers": "kelnes-zenitas-smaragdine-zalia",
+    "green-long": "ilga-suknele-aurora-smaragdine-zalia",
+    "green-dress": "trumpa-suknele-nova-smaragdine-zalia"
+  },
+  "matchingEvidence": "B2B source gallery image numbers matched against live retail product galleries. Green VISATA and VENERA also matched by B2B model numbers SKZ225 and SKZ227 against live retail SKUs. URL slugs retain older names aurora, nova and zenitas, so use actual store handles rather than generating URLs from current titles. Outfit photos link to the skirt or trousers featured in their original B2B product listing. Hero and all three CTA buttons link to the whole collection."
+}

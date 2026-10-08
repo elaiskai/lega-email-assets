@@ -1,0 +1,11 @@
+{
+  "reviewedAt": "2026-10-08",
+  "htmlSha256": "d3c01b83dcfae0a058f85e331465beed60addf21be41dfd8902a62dcb96a423e",
+  "browserVisualQa": "passed",
+  "reviewedVariants": ["600", "600-stripped", "320", "320-stripped", "320-stripped-inset", "390", "390-stripped", "390-stripped-inset", "430", "430-stripped", "430-stripped-inset"],
+  "method": "Rendered exact hosted newsletter.html. Before publishing, only remote asset requests were fulfilled using identical local bytes listed in asset-manifest.json. Fresh screenshots generated from this HTML hash and all eleven full-email contact sheets visually reviewed.",
+  "checks": ["Readable text widths and intact words", "Natural photo proportions and original photo ordering", "Single-line NAUJIENA hero title", "No excessive empty columns", "Consistent desktop and mobile spacing", "All primary CTA rectangles at least 54px tall and fully linked", "Every product image remains its own complete linked tap target", "Three-column image-only lookbook remains intact without head styles", "No horizontal overflow", "No dash punctuation in customer-facing text or alt text"],
+  "actualOmnisendDeliveryVerified": false,
+  "remainingBeforeSending": ["Confirm unsubscribe token in Omnisend", "Send a fresh Omnisend phone test and inspect the received email"],
+  "scope": "GitHub asset package, not a sent campaign."
+}

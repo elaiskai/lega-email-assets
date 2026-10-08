@@ -1,0 +1,304 @@
+{
+  "htmlSha256": "d3c01b83dcfae0a058f85e331465beed60addf21be41dfd8902a62dcb96a423e",
+  "results": [
+    {
+      "width": 600,
+      "stripped": false,
+      "inset": 0,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Atrasti naują kolekciją →",
+          "width": 340,
+          "height": 54
+        },
+        {
+          "text": "Išsirinkti savo derinį →",
+          "width": 340,
+          "height": 54
+        },
+        {
+          "text": "Peržiūrėti visą kolekciją →",
+          "width": 340,
+          "height": 54
+        }
+      ],
+      "pageHeight": 2572,
+      "heroHeight": 570,
+      "passed": true,
+      "screenshotSha256": "6087a60abb4bb11bc9145a4972b4225e95c0039c2ded7156e9ad97c8c24adb43"
+    },
+    {
+      "width": 600,
+      "stripped": true,
+      "inset": 0,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Atrasti naują kolekciją →",
+          "width": 340,
+          "height": 54
+        },
+        {
+          "text": "Išsirinkti savo derinį →",
+          "width": 340,
+          "height": 54
+        },
+        {
+          "text": "Peržiūrėti visą kolekciją →",
+          "width": 340,
+          "height": 54
+        }
+      ],
+      "pageHeight": 2573,
+      "heroHeight": 570,
+      "passed": true,
+      "screenshotSha256": "597a8a7697522fdedc61f7971998bfe159b17ec7891944712e5d6b29848bb5d2"
+    },
+    {
+      "width": 320,
+      "stripped": false,
+      "inset": 0,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Atrasti naują kolekciją →",
+          "width": 270,
+          "height": 54
+        },
+        {
+          "text": "Išsirinkti savo derinį →",
+          "width": 276,
+          "height": 54
+        },
+        {
+          "text": "Peržiūrėti visą kolekciją →",
+          "width": 272,
+          "height": 54
+        }
+      ],
+      "pageHeight": 2071,
+      "heroHeight": 304,
+      "passed": true,
+      "screenshotSha256": "3c3591053d92a14a70b3ea24244d5c1dee7c5ce57bc8e0619de09b876eb9fdc9"
+    },
+    {
+      "width": 320,
+      "stripped": true,
+      "inset": 0,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Atrasti naują kolekciją →",
+          "width": 270,
+          "height": 54
+        },
+        {
+          "text": "Išsirinkti savo derinį →",
+          "width": 276,
+          "height": 54
+        },
+        {
+          "text": "Peržiūrėti visą kolekciją →",
+          "width": 272,
+          "height": 54
+        }
+      ],
+      "pageHeight": 2073,
+      "heroHeight": 304,
+      "passed": true,
+      "screenshotSha256": "11d260068287ee8e40f0bd01cdc86b8c9259efea2d626ecafc64537a6619589f"
+    },
+    {
+      "width": 320,
+      "stripped": true,
+      "inset": 16,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Atrasti naują kolekciją →",
+          "width": 238,
+          "height": 54
+        },
+        {
+          "text": "Išsirinkti savo derinį →",
+          "width": 244,
+          "height": 54
+        },
+        {
+          "text": "Peržiūrėti visą kolekciją →",
+          "width": 240,
+          "height": 54
+        }
+      ],
+      "pageHeight": 2074,
+      "heroHeight": 273.59375,
+      "passed": true,
+      "screenshotSha256": "8fcf44872a48b6cf73cffa574ee2af477cb8b82c6fdae3744d431d609e6b89fe"
+    },
+    {
+      "width": 390,
+      "stripped": false,
+      "inset": 0,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Atrasti naują kolekciją →",
+          "width": 340,
+          "height": 54
+        },
+        {
+          "text": "Išsirinkti savo derinį →",
+          "width": 340,
+          "height": 54
+        },
+        {
+          "text": "Peržiūrėti visą kolekciją →",
+          "width": 340,
+          "height": 54
+        }
+      ],
+      "pageHeight": 2148,
+      "heroHeight": 370.5,
+      "passed": true,
+      "screenshotSha256": "a1181a295373b901dde5810a06fbd4185b26b0c78b7887e33f34e988e49fbdbc"
+    },
+    {
+      "width": 390,
+      "stripped": true,
+      "inset": 0,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Atrasti naują kolekciją →",
+          "width": 340,
+          "height": 54
+        },
+        {
+          "text": "Išsirinkti savo derinį →",
+          "width": 340,
+          "height": 54
+        },
+        {
+          "text": "Peržiūrėti visą kolekciją →",
+          "width": 340,
+          "height": 54
+        }
+      ],
+      "pageHeight": 2149,
+      "heroHeight": 370.5,
+      "passed": true,
+      "screenshotSha256": "a223fc1291e048f1d2277b6954076e7f8bf84de286377a8e85c34690fe061ff7"
+    },
+    {
+      "width": 390,
+      "stripped": true,
+      "inset": 16,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Atrasti naują kolekciją →",
+          "width": 308,
+          "height": 54
+        },
+        {
+          "text": "Išsirinkti savo derinį →",
+          "width": 314,
+          "height": 54
+        },
+        {
+          "text": "Peržiūrėti visą kolekciją →",
+          "width": 310,
+          "height": 54
+        }
+      ],
+      "pageHeight": 2120,
+      "heroHeight": 340.09375,
+      "passed": true,
+      "screenshotSha256": "6dbdfe0727b03611bec391fcb8b62161ddd96852a5a37c1b83d678ab7ed36cc4"
+    },
+    {
+      "width": 430,
+      "stripped": false,
+      "inset": 0,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Atrasti naują kolekciją →",
+          "width": 340,
+          "height": 54
+        },
+        {
+          "text": "Išsirinkti savo derinį →",
+          "width": 340,
+          "height": 54
+        },
+        {
+          "text": "Peržiūrėti visą kolekciją →",
+          "width": 340,
+          "height": 54
+        }
+      ],
+      "pageHeight": 2178,
+      "heroHeight": 408.5,
+      "passed": true,
+      "screenshotSha256": "c60698ebcf84cd9d865bb2274cc0d0db11760b0fcabe149f8fc7102c3588acdd"
+    },
+    {
+      "width": 430,
+      "stripped": true,
+      "inset": 0,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Atrasti naują kolekciją →",
+          "width": 340,
+          "height": 54
+        },
+        {
+          "text": "Išsirinkti savo derinį →",
+          "width": 340,
+          "height": 54
+        },
+        {
+          "text": "Peržiūrėti visą kolekciją →",
+          "width": 340,
+          "height": 54
+        }
+      ],
+      "pageHeight": 2179,
+      "heroHeight": 408.5,
+      "passed": true,
+      "screenshotSha256": "38843cdc64421e92e1f76e391bb6daaba0cc2981502a5da11285638ecf172970"
+    },
+    {
+      "width": 430,
+      "stripped": true,
+      "inset": 16,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Atrasti naują kolekciją →",
+          "width": 340,
+          "height": 54
+        },
+        {
+          "text": "Išsirinkti savo derinį →",
+          "width": 340,
+          "height": 54
+        },
+        {
+          "text": "Peržiūrėti visą kolekciją →",
+          "width": 340,
+          "height": 54
+        }
+      ],
+      "pageHeight": 2146,
+      "heroHeight": 378.09375,
+      "passed": true,
+      "screenshotSha256": "972e522ce13d96beb61aa48c1a9ee19ed8590270bcd0359bac6cf84cace01d5a"
+    }
+  ],
+  "actualOmnisendDeliveryVerified": false,
+  "visualReview": "See qa-visual.json"
+}

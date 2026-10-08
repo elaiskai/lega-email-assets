@@ -1,0 +1,10 @@
+{
+  "checkedOn": "2026-10-08",
+  "url": "https://lega.lt/collections/dzemperinis-trikotazas-su-pukeliu",
+  "status": 200,
+  "method": "curl with redirects and HTTP status output",
+  "htmlEvidence": "retail-collection.html",
+  "canonicalMatches": true,
+  "language": "lt",
+  "note": "Node fetch received HTTP 429 on the collection route. Two independent curl retrievals returned HTTP 200 with the correct canonical and Lithuanian collection HTML. All nine individual product pages returned HTTP 200 and matched their retail product IDs and headings in link-verification.json."
+}
