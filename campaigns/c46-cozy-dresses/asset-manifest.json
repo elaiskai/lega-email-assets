@@ -1,0 +1,26 @@
+[
+  {
+    "file": "lega-logo-white.png",
+    "sha256": "522d3ba6f2e2872920cf2168ea124071179d6e952fdbe28aa1165e59871a68bc"
+  },
+  {
+    "file": "hero-visata-reference-v4.jpg",
+    "sha256": "829130aea7e951c341db33317a1f407b6ba5b2d2941c0811ba154e0290adb458"
+  },
+  {
+    "file": "astra-bordo.jpg",
+    "sha256": "e4e6d8901d24cc31455231a027ba403b01d1b86922f6073fe9add4713de37154"
+  },
+  {
+    "file": "venera-mocha.jpg",
+    "sha256": "0c33eebd5cece6a37584c9a6839219a048d52169b73972be5df5e177202d4d58"
+  },
+  {
+    "file": "hero.jpg",
+    "sha256": "3395329e344f0a5c2042b20b8797a171dc6f43b49eeaabe6439726d92fcc68ea"
+  },
+  {
+    "file": "begalybe-mocha.jpg",
+    "sha256": "edd11239f61630a4f9d144ebcdc2e3eda77dccb604af98f83d73e8e9f62f2ae6"
+  }
+]
