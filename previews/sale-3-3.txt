@@ -1,0 +1,35 @@
+SUBJECT: PASKUTINĖ DIENA: −40 % baigiasi 23:59 ⏳
+PREHEADER: Tavo VIP kodas LEGA40VIP galioja tik šiandien. Nelauk paskutinės minutės.
+
+LEGA
+
+PASKUTINĖ PROGA
+−40 % TIK ŠIANDIEN IKI 23:59
+
+KODAS: LEGA40VIP
+
+Jei laukėte ženklo — štai jis.
+
+Tik šiandien iki 23:59 jūsų kodas suteikia −40 % trims LEGA kolekcijoms. Vėliau nuolaida nebegalios.
+
+PANAUDOTI KODĄ DABAR
+https://lega.lt/collections
+
+PRABANGI VISKOZĖ
+https://lega.lt/collections/cupros-kolekcija
+
+DRYŽUOTA KOLEKCIJA
+https://lega.lt/collections/dryzuota-kolekcija
+
+LAISVALAIKIO LINIJA
+https://lega.lt/collections/laisvalaikio-linija
+
+SVARBU
+Natūraliam linui ir tampriam linui 40 % nuolaida netaikoma.
+
+Pasiūlymas skirtas tik naujienlaiškio prenumeratorėms ir galioja iki 2026-08-17 23:59.
+
+LEGA
+https://lega.lt/
+
+Atsisakyti naujienlaiškio: {{ unsubscribe_url }}
