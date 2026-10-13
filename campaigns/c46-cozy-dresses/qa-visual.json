@@ -1,10 +1,10 @@
 {
-  "htmlSha256": "a6c63a52f68dade2a3e50e68e513f7887febd4abeecca433af8c925fced160f8",
-  "reviewDate": "2026-10-12",
+  "htmlSha256": "7c9142fab413c7e8e437a4b68fac1208d654cbba3873f5df65a42b24192df254",
+  "reviewDate": "2026-10-13",
   "reviewed": ["600", "600-stripped", "320", "320-stripped", "320-stripped-inset", "390", "390-stripped", "390-stripped-inset", "430", "430-stripped", "430-stripped-inset"],
   "browserVisualReviewPassed": true,
-  "notes": "All 11 fresh previews rendered from this exact hosted-URL HTML and inspected. During prepublication rendering, the six future GitHub image URLs were fulfilled with their exact packaged asset bytes. Approved V4 portrait hero remains uncropped at natural aspect ratio, entirely linked to VISATA burgundy. Readable text, intact names, natural images, single-column mobile stacking, associated photo and CTA, aligned spacing and CTA target sizes checked, including head styles and fonts removed. All automated checks passed.",
+  "notes": "Fresh exact publication HTML rendered and all 11 contact sheets inspected. Four hosted asset URLs resolved to exact packaged bytes during prepublication QA. V5 has dresses only, unchanged approved portrait hero, front ASTRA and seated VENERA. Verified readable text, intact names, natural photo ratios, stacked photo and CTA order, aligned desktop cards, consistent spacing and full CTA targets. All automated checks passed.",
   "actualOmnisendDeliveryVerified": false,
   "actualGmailDeliveryVerified": false,
-  "beforeSending": "Validate [[unsubscribe]] in Omnisend and inspect a fresh test email on a phone. Browser QA is not email-client delivery verification."
+  "beforeSending": "Confirm unsubscribe tag and inspect a fresh Omnisend test email on a phone. Browser simulation is not actual email-client verification."
 }
