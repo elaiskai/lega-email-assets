@@ -1,0 +1,334 @@
+{
+  "htmlSha256": "602f1cf173ba0af42ac9d6412d1386c0a6265238ef85b9fcb5bb7bdb127f893e",
+  "results": [
+    {
+      "width": 600,
+      "stripped": false,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Apžiūrėti VISATĄ ↗",
+          "width": 360,
+          "height": 54
+        },
+        {
+          "text": "Žiūrėti suknelę ↗",
+          "width": 360,
+          "height": 54
+        },
+        {
+          "text": "Mokos ruda↗",
+          "width": 548,
+          "height": 55
+        },
+        {
+          "text": "Dūminė bordo↗",
+          "width": 548,
+          "height": 55
+        },
+        {
+          "text": "Safyro mėlyna↗",
+          "width": 548,
+          "height": 55
+        },
+        {
+          "text": "Smaragdinė žalia↗",
+          "width": 548,
+          "height": 55
+        }
+      ],
+      "height": 3645,
+      "columns": [],
+      "screenshotSha256": "30895c5a7a8b1265c78f358e5b2c27557c6ff7f4d7157702b826822207afe10e",
+      "passed": true
+    },
+    {
+      "width": 600,
+      "stripped": true,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Apžiūrėti VISATĄ ↗",
+          "width": 360,
+          "height": 54
+        },
+        {
+          "text": "Žiūrėti suknelę ↗",
+          "width": 360,
+          "height": 54
+        },
+        {
+          "text": "Mokos ruda↗",
+          "width": 548,
+          "height": 55
+        },
+        {
+          "text": "Dūminė bordo↗",
+          "width": 548,
+          "height": 55
+        },
+        {
+          "text": "Safyro mėlyna↗",
+          "width": 548,
+          "height": 55
+        },
+        {
+          "text": "Smaragdinė žalia↗",
+          "width": 548,
+          "height": 55
+        }
+      ],
+      "height": 3645,
+      "columns": [],
+      "screenshotSha256": "bb776ba1f5b7aabd42d30ce27dccd45290a694f2ecd84254b21c1d3f3784204b",
+      "passed": true
+    },
+    {
+      "width": 320,
+      "stripped": false,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Apžiūrėti VISATĄ ↗",
+          "width": 268,
+          "height": 54
+        },
+        {
+          "text": "Žiūrėti suknelę ↗",
+          "width": 268,
+          "height": 54
+        },
+        {
+          "text": "Mokos ruda↗",
+          "width": 268,
+          "height": 55
+        },
+        {
+          "text": "Dūminė bordo↗",
+          "width": 268,
+          "height": 55
+        },
+        {
+          "text": "Safyro mėlyna↗",
+          "width": 268,
+          "height": 55
+        },
+        {
+          "text": "Smaragdinė žalia↗",
+          "width": 268,
+          "height": 55
+        }
+      ],
+      "height": 2885,
+      "columns": [],
+      "screenshotSha256": "cdde2da843eb6b641d654d6a3b98813c0e2415a6e6d1a8ea483c9f08a5f920c2",
+      "passed": true
+    },
+    {
+      "width": 320,
+      "stripped": true,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Apžiūrėti VISATĄ ↗",
+          "width": 268,
+          "height": 54
+        },
+        {
+          "text": "Žiūrėti suknelę ↗",
+          "width": 268,
+          "height": 54
+        },
+        {
+          "text": "Mokos ruda↗",
+          "width": 268,
+          "height": 55
+        },
+        {
+          "text": "Dūminė bordo↗",
+          "width": 268,
+          "height": 55
+        },
+        {
+          "text": "Safyro mėlyna↗",
+          "width": 268,
+          "height": 55
+        },
+        {
+          "text": "Smaragdinė žalia↗",
+          "width": 268,
+          "height": 55
+        }
+      ],
+      "height": 2885,
+      "columns": [],
+      "screenshotSha256": "caa2bb866d7710371abda1d21f005d05a97e09d269d24f5270b14231f8a156a7",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "stripped": false,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Apžiūrėti VISATĄ ↗",
+          "width": 338,
+          "height": 54
+        },
+        {
+          "text": "Žiūrėti suknelę ↗",
+          "width": 338,
+          "height": 54
+        },
+        {
+          "text": "Mokos ruda↗",
+          "width": 338,
+          "height": 55
+        },
+        {
+          "text": "Dūminė bordo↗",
+          "width": 338,
+          "height": 55
+        },
+        {
+          "text": "Safyro mėlyna↗",
+          "width": 338,
+          "height": 55
+        },
+        {
+          "text": "Smaragdinė žalia↗",
+          "width": 338,
+          "height": 55
+        }
+      ],
+      "height": 2990,
+      "columns": [],
+      "screenshotSha256": "db3227663c1505decfc1c714783967f771b76df51729981e2ba51fe8009dfbbd",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "stripped": true,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Apžiūrėti VISATĄ ↗",
+          "width": 338,
+          "height": 54
+        },
+        {
+          "text": "Žiūrėti suknelę ↗",
+          "width": 338,
+          "height": 54
+        },
+        {
+          "text": "Mokos ruda↗",
+          "width": 338,
+          "height": 55
+        },
+        {
+          "text": "Dūminė bordo↗",
+          "width": 338,
+          "height": 55
+        },
+        {
+          "text": "Safyro mėlyna↗",
+          "width": 338,
+          "height": 55
+        },
+        {
+          "text": "Smaragdinė žalia↗",
+          "width": 338,
+          "height": 55
+        }
+      ],
+      "height": 2990,
+      "columns": [],
+      "screenshotSha256": "50773c25a1e58bf650dadf95d5ff458839ab168ea7199595f071fe6940e7391c",
+      "passed": true
+    },
+    {
+      "width": 430,
+      "stripped": false,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Apžiūrėti VISATĄ ↗",
+          "width": 360,
+          "height": 54
+        },
+        {
+          "text": "Žiūrėti suknelę ↗",
+          "width": 360,
+          "height": 54
+        },
+        {
+          "text": "Mokos ruda↗",
+          "width": 378,
+          "height": 55
+        },
+        {
+          "text": "Dūminė bordo↗",
+          "width": 378,
+          "height": 55
+        },
+        {
+          "text": "Safyro mėlyna↗",
+          "width": 378,
+          "height": 55
+        },
+        {
+          "text": "Smaragdinė žalia↗",
+          "width": 378,
+          "height": 55
+        }
+      ],
+      "height": 3082,
+      "columns": [],
+      "screenshotSha256": "5a31fb03d32929e0c04e8a9a34e12ff87725c3975a3b1c3e624085c859f495c7",
+      "passed": true
+    },
+    {
+      "width": 430,
+      "stripped": true,
+      "errors": [],
+      "buttons": [
+        {
+          "text": "Apžiūrėti VISATĄ ↗",
+          "width": 360,
+          "height": 54
+        },
+        {
+          "text": "Žiūrėti suknelę ↗",
+          "width": 360,
+          "height": 54
+        },
+        {
+          "text": "Mokos ruda↗",
+          "width": 378,
+          "height": 55
+        },
+        {
+          "text": "Dūminė bordo↗",
+          "width": 378,
+          "height": 55
+        },
+        {
+          "text": "Safyro mėlyna↗",
+          "width": 378,
+          "height": 55
+        },
+        {
+          "text": "Smaragdinė žalia↗",
+          "width": 378,
+          "height": 55
+        }
+      ],
+      "height": 3082,
+      "columns": [],
+      "screenshotSha256": "665346728097ec341bba9a8e666ebcd18e75c55e65b11b38cb5fc592422aca87",
+      "passed": true
+    }
+  ],
+  "actualOmnisendDeliveryVerified": false
+}

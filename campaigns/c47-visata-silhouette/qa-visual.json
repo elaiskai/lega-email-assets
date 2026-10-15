@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-15",
+  "htmlSha256": "602f1cf173ba0af42ac9d6412d1386c0a6265238ef85b9fcb5bb7bdb127f893e",
+  "browserVisualReview": "passed",
+  "reviewedFreshPreviews": ["600", "320", "390", "430", "600-stripped", "320-stripped", "390-stripped", "430-stripped"],
+  "observations": [
+    "Fresh screenshots generated from this exact publish HTML. Before upload, future public asset URLs were intercepted and fulfilled with the exact matching upload files.",
+    "Full dress silhouette visible. Model name, price, and new caption intact. Hero image is wholly clickable including its baked button.",
+    "Readable full width copy, natural photo proportions, intact names and associated photo CTAs. No excessive text columns or horizontal overflow.",
+    "Live buttons and colour rows have full clickable areas above 44 px high. Hero link covers the full image.",
+    "Head styles and font links removed variant remains readable and aligned at all four widths.",
+    "No customer facing dash punctuation. All required image assets included."
+  ],
+  "actualOmnisendDeliveryVerified": false,
+  "deliveryNote": "After import, verify unsubscribe merge tag and send a fresh Omnisend phone test before sending the campaign."
+}
